@@ -1,5 +1,6 @@
 body {
     background: #000;
+    margin: 0;
 }
 
 header .col {
@@ -10,4 +11,24 @@ header .col {
 header img {
     width: 10%;
     max-width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(343deg, #FFFFFF -140%, #000000 53%);
+    height: 95vh;
+
+}
+
+.hero .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 30%;
+    max-width: 100%;
+    border-radius: 50%;
+    
 }

@@ -16,7 +16,7 @@
      <!-- <script language="JavaScript".> document.addEventListener("contextmenu", function(e){ e.preventDefault(); }, false); </script> -->
     <!-- Right Click Disable -->
 
-    <!-- Navbar Start -->
+    <!-- Header Start -->
      <header>
             <div class="row">
                 <div class="col">
@@ -24,7 +24,39 @@
                 </div>
             </div>
      </header>
-    <!-- Navbar End -->
+    <!-- Header End -->
+
+    <!-- Main Start -->
+     <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                            <img src="images/Pj-pic.jpeg" alt="pranjal-photo">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="hero-title">HI THERE!</p>
+                        <h1>I'M <span class="auto-type"></span></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+    <!-- Main End -->
+
     
+    <!-- Javascript Links -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('.auto-type', {
+            strings: ["Pranjal Lakhera", "Wordpress Developer", "A Freelancer", "Web Developer"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true
+            });
+    </script>
+
 </body>
 </html>
