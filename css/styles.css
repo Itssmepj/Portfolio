@@ -1,0 +1,13 @@
+body {
+    background: #000;
+}
+
+header .col {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 10%;
+    max-width: 100%;
+}
