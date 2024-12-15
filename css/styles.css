@@ -19,7 +19,7 @@ body {
     letter-spacing: 0.5;
     text-transform: uppercase;
     padding: 12px 36px;
-    border: none;
+    border: 2px solid #FF2868;
     border-radius: 26px;
     background: #FF2868;
 }
@@ -28,6 +28,22 @@ body {
     background: #000;
     color: #fff;
     border: 2px solid #FF2868;
+}
+
+.main-btn:hover {
+    color: #fff;
+    background: #7A7A7A;
+    border-color: #7A7A7A;
+    transition: ease-in-out;
+    transform: rotate(3deg);
+}
+
+.other-btn:hover {
+    background: #FF2868;
+}
+
+.fa-solid {
+    margin-left: 10px;
 }
 
 header .col {
