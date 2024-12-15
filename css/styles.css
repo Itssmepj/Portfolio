@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
     
 body {
     background: #000;
+    font-family: "Open Sans", serif;
 }
 
 header .col {
@@ -33,18 +36,45 @@ header img {
     align-items: center;
 }
 
+.hero .col-md-6 {
+    width: 50%;
+}
+
+.hero .col-md-6:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero img {
-    width: 30%;
+    width: 50%;
     max-width: 100%;
     border-radius: 50%;
 }
 
-.hero h1 {
+.hero p {
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
 
+.hero h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
     text-transform: uppercase;
+    margin: 2px 0;
 }
 
 .hero span {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
     color: #FF2868;
 }
 
+.hero h2 {
+    font-size: 19px;  
+    font-weight: 500;  
+    line-height: 1.6;
+}
