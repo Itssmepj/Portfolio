@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+    
 body {
     background: #000;
-    margin: 0;
 }
 
 header .col {
@@ -17,6 +23,7 @@ header img {
 .hero {
     background: linear-gradient(343deg, #FFFFFF -140%, #000000 53%);
     height: 95vh;
+    color: white;
 
 }
 
@@ -30,5 +37,14 @@ header img {
     width: 30%;
     max-width: 100%;
     border-radius: 50%;
-    
 }
+
+.hero h1 {
+
+    text-transform: uppercase;
+}
+
+.hero span {
+    color: #FF2868;
+}
+
