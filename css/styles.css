@@ -46,6 +46,17 @@ body {
     margin-left: 10px;
 }
 
+.arrow{
+    position: absolute;
+    right: 5rem;
+    bottom: 2rem;
+}
+
+.icon{
+    cursor: pointer;
+    height: 4.2rem;
+}
+
 header .col {
     display: flex;
     justify-content: center;
@@ -122,13 +133,23 @@ header img {
     gap: 30px;
 }
 
-.arrow{
-    position: absolute;
-    right: 5rem;
-    bottom: 2rem;
+/* About Section */
+.about {
+    height: 94vh;
+    text-align: center;
+    padding: 80px 14rem 45px;
 }
 
-.icon{
-    cursor: pointer;
-    height: 4.2rem;
+.section-title {
+    font-size: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+}
+
+.about p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
