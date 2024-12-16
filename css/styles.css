@@ -12,6 +12,11 @@ body {
     font-family: "Open Sans", serif;
 }
 
+.hero, .about, .education, .skills, .projects, .testimonial, .cta, .footer {
+    background: linear-gradient(343deg, #FFFFFF -140%, #000000 53%);
+    color: white;
+}
+
 .section-title {
     font-size: 21px;
     font-weight: 600;
@@ -93,10 +98,8 @@ header img {
 }
 
 /* Hero Section */
-.hero, .about {
-    background: linear-gradient(343deg, #FFFFFF -140%, #000000 53%);
+.hero {
     height: 89vh;
-    color: white;
     display: flex;
     align-items: center;
 }
@@ -161,6 +164,8 @@ header img {
 /* About Section */
 .about {
     height: 95vh;
+    display: flex;
+    align-items: center;
     text-align: center;
     padding: 15px 14rem 30px;
     position: relative;
@@ -193,3 +198,18 @@ header img {
     bottom: 8rem;
 }
 
+/* Education Section */
+.education {
+    position: relative;
+}
+
+.education .row {
+    display: flex;
+}
+
+.education .col-md-6 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
