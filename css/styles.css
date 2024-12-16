@@ -61,6 +61,8 @@ header img {
     background: linear-gradient(343deg, #FFFFFF -140%, #000000 53%);
     height: 95vh;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .hero .row {
@@ -79,21 +81,21 @@ header img {
     align-items: center;
 }
 
-.hero img {
-    width: 50%;
+.hero img:nth-child(1) {
+    width: 60%;
     max-width: 100%;
     border-radius: 50%;
 }
 
 .hero p {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 5px;
 }
 
 .hero h1 {
     font-family: "Poppins", sans-serif;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 5px 0;
@@ -101,15 +103,31 @@ header img {
 
 .hero span {
     font-family: "Poppins", sans-serif;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 600;
     color: #FF2868;
 }
 
 .hero h2 {
-    font-size: 18px;  
+    font-size: 19px;  
     font-weight: 500;  
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 30px;
     width: 82%;
+}
+
+.hero .col {
+    display: flex;
+    gap: 30px;
+}
+
+.arrow{
+    position: absolute;
+    right: 5rem;
+    bottom: 2rem;
+}
+
+.icon{
+    cursor: pointer;
+    height: 4.2rem;
 }
