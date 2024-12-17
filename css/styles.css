@@ -8,7 +8,6 @@
 }
     
 body {
-    background: #000;
     font-family: "Open Sans", serif;
 }
 
@@ -218,14 +217,11 @@ header img {
 
 .accordion-container {
     width: 100%;
-    margin: 50px auto;
 }
   
 .accordion-item {
-    background: #111;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background: transparent;
+    margin-bottom: 20px;
     overflow: hidden;
 }
   
@@ -233,7 +229,7 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
     cursor: pointer;
     background: transparent;
     border: 2px solid #54595F;
@@ -245,7 +241,6 @@ header img {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 600;
-    margin: 0;
     color: #54595F;
 }
 
@@ -258,17 +253,18 @@ header img {
     border-width: 2px 2px 0;
 }
   
-.accordion-header .icon {
-    font-size: 20px;
+.accordion-header .chevron-icon {
+    font-size: 16px;
     color: #FF2868;
+    transition: transform 0.3s ease;
     font-weight: bold;
 }
   
 .accordion-content {
     display: none;
-    padding: 15px 20px;
-    background-color: #1c1c1c;
-    color: #d1d1d1;
+    padding: 25px 20px;
+    background-color: #1f1f1f;
+    color: #fff;
     line-height: 1.5;
 }
   
@@ -289,12 +285,6 @@ header img {
 .accordion-content li::before {
     content: "✔ ";
     color: #FF2868;
-}
-  
-.accordion-header .icon {
-    font-size: 16px;
-    color: #FF2868;
-    transition: transform 0.3s ease;
 }
   
 .accordion-header.active .icon i {
