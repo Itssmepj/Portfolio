@@ -275,22 +275,41 @@ header img {
 }
   
 .accordion-content h4 {
+    font-size: 21px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+.accordion-content h4 span {
+    font-size: 21px;
+    font-weight: 500;
     color: #FF2868;
     margin: 0 0 10px;
 }
+
+.accordion-content p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7A7A7A;
+}
   
 .accordion-content ul {
-    padding-left: 20px;
+    margin-top: 30px;
 }
   
 .accordion-content li {
-    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 200;
+    margin-bottom: 20px;
     list-style: none;
 }
   
-.accordion-content li::before {
-    content: "✔ ";
+.accordion-content .fa-check{
+    font-size: 20px;
     color: #FF2868;
+    margin-right: 8px;
+    margin-left: 0;
 }
   
 .accordion-header.active .icon i {
