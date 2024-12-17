@@ -243,7 +243,7 @@ header img {
     color: #54595F;
 }
 
-.accordion-header h3:hover{
+.accordion-header h3:hover, .accordion-header .chevron-icon:hover{
     color: #FF2868;
 }
   
@@ -258,7 +258,7 @@ header img {
   
 .accordion-header .chevron-icon {
     font-size: 16px;
-    color: #FF2868;
+    color: #54595F;
     transition: transform 0.3s ease;
     font-weight: bold;
 }
