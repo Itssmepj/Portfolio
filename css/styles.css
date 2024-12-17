@@ -310,6 +310,7 @@ header img {
     color: #FF2868;
     margin-right: 8px;
     margin-left: 0;
+    vertical-align: -0.1cap;
 }
   
 .accordion-header.active .icon i {
