@@ -206,18 +206,18 @@ header img {
 
 .education .row {
     display: flex;
+    gap: 100px;
 }
 
 .education .col-md-6 {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .accordion-container {
-    width: 80%;
+    width: 100%;
     margin: 50px auto;
 }
   
@@ -233,26 +233,34 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 0 20px;
     cursor: pointer;
-    background: #111;
-    border-bottom: 2px solid transparent;
+    background: transparent;
+    border: 2px solid #54595F;
+    border-radius: 10px 10px 0 0;
     transition: all 0.3s ease;
 }
   
 .accordion-header h3 {
-    margin: 0;
-    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
     font-weight: 600;
+    margin: 0;
+    color: #54595F;
+}
+
+.accordion-header h3:hover, .accordion-header h3.active  {
+    color: #FF2868;
 }
   
 .accordion-header.active {
-    border-bottom: 2px solid #e91e63;
+    background-color: #1f1f1f;
+    border-width: 2px 2px 0;
 }
   
 .accordion-header .icon {
     font-size: 20px;
-    color: #e91e63;
+    color: #FF2868;
     font-weight: bold;
 }
   
@@ -265,7 +273,7 @@ header img {
 }
   
 .accordion-content h4 {
-    color: #e91e63;
+    color: #FF2868;
     margin: 0 0 10px;
 }
   
@@ -280,12 +288,12 @@ header img {
   
 .accordion-content li::before {
     content: "✔ ";
-    color: #e91e63;
+    color: #FF2868;
 }
   
 .accordion-header .icon {
     font-size: 16px;
-    color: #e91e63;
+    color: #FF2868;
     transition: transform 0.3s ease;
 }
   
