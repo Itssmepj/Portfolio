@@ -250,48 +250,48 @@ header img {
     border-bottom: 2px solid #e91e63;
 }
   
-  .accordion-header .icon {
+.accordion-header .icon {
     font-size: 20px;
     color: #e91e63;
     font-weight: bold;
-  }
+}
   
-  .accordion-content {
+.accordion-content {
     display: none;
     padding: 15px 20px;
     background-color: #1c1c1c;
     color: #d1d1d1;
     line-height: 1.5;
-  }
+}
   
-  .accordion-content h4 {
+.accordion-content h4 {
     color: #e91e63;
     margin: 0 0 10px;
-  }
+}
   
-  .accordion-content ul {
+.accordion-content ul {
     padding-left: 20px;
-  }
+}
   
-  .accordion-content li {
+.accordion-content li {
     margin-bottom: 8px;
     list-style: none;
-  }
+}
   
-  .accordion-content li::before {
+.accordion-content li::before {
     content: "✔ ";
     color: #e91e63;
-  }
+}
   
-  .accordion-header .icon {
+.accordion-header .icon {
     font-size: 16px;
     color: #e91e63;
     transition: transform 0.3s ease;
-  }
+}
   
-  .accordion-header.active .icon i {
+.accordion-header.active .icon i {
     transform: rotate(180deg); /* Flip Chevron Up */
-  }
+}
   
 
 
