@@ -229,12 +229,11 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 12px 20px;
     cursor: pointer;
     background: transparent;
     border: 2px solid #54595F;
     border-radius: 10px 10px 0 0;
-    transition: all 0.3s ease;
 }
   
 .accordion-header h3 {
@@ -244,13 +243,17 @@ header img {
     color: #54595F;
 }
 
-.accordion-header h3:hover, .accordion-header h3.active  {
+.accordion-header h3:hover{
     color: #FF2868;
 }
   
 .accordion-header.active {
     background-color: #1f1f1f;
     border-width: 2px 2px 0;
+}
+
+.accordion-header:hover {
+    border: 2px solid #FF2868;
 }
   
 .accordion-header .chevron-icon {
@@ -264,6 +267,9 @@ header img {
     display: none;
     padding: 25px 20px;
     background-color: #1f1f1f;
+    border-width: 0px 2px 2px 2px !important;
+    border: 2px solid #54595F;
+    border-radius: 0 0 10px 10px;
     color: #fff;
     line-height: 1.5;
 }
