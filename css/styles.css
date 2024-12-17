@@ -9,9 +9,10 @@
     
 body {
     font-family: "Open Sans", serif;
+    background: #000;
 }
 
-.hero, .about, .education, .skills, .projects, .testimonial, .cta, .footer {
+.hero, .about, .education, .skill, .projects, .testimonial, .cta, .footer {
     background: linear-gradient(343deg, #FFFFFF -140%, #000000 53%);
     color: white;
 }
@@ -199,7 +200,7 @@ header img {
 
 /* Education Section */
 .education {
-    padding: 80px 12rem 50px;
+    padding: 130px 12rem 150px;
     position: relative;
 }
 
@@ -316,8 +317,32 @@ header img {
 .accordion-header.active .icon i {
     transform: rotate(180deg); /* Flip Chevron Up */
 }
-  
 
+.education .up-arrow {
+    bottom: 4rem;
+}
+
+.education .down-arrow {
+    bottom: 9rem;
+}
+  
+/* Skill Section */
+.skill {
+    padding: 80px 12rem 50px;
+    position: relative;
+}
+
+.skill .row {
+    text-align: center;
+}
+
+.skill-type {
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #7A7A7A;
+    text-transform: capitalize;
+}
 
 
 
