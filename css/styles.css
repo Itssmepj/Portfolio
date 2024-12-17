@@ -121,7 +121,7 @@ header img {
 }
 
 .hero img:nth-child(1) {
-    width: 60%;
+    width: 58%;
     max-width: 100%;
     border-radius: 50%;
     box-shadow: 3px 2px 7px -2px rgba(106, 102, 113, 0.94);
@@ -211,6 +211,89 @@ header img {
 .education .col-md-6 {
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.accordion-container {
+    width: 80%;
+    margin: 50px auto;
+}
+  
+.accordion-item {
+    background: #111;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+  
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    background: #111;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+  
+.accordion-header h3 {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+}
+  
+.accordion-header.active {
+    border-bottom: 2px solid #e91e63;
+}
+  
+  .accordion-header .icon {
+    font-size: 20px;
+    color: #e91e63;
+    font-weight: bold;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 15px 20px;
+    background-color: #1c1c1c;
+    color: #d1d1d1;
+    line-height: 1.5;
+  }
+  
+  .accordion-content h4 {
+    color: #e91e63;
+    margin: 0 0 10px;
+  }
+  
+  .accordion-content ul {
+    padding-left: 20px;
+  }
+  
+  .accordion-content li {
+    margin-bottom: 8px;
+    list-style: none;
+  }
+  
+  .accordion-content li::before {
+    content: "✔ ";
+    color: #e91e63;
+  }
+  
+  .accordion-header .icon {
+    font-size: 16px;
+    color: #e91e63;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-header.active .icon i {
+    transform: rotate(180deg); /* Flip Chevron Up */
+  }
+  
+
+
+
+
