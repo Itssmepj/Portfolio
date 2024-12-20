@@ -342,6 +342,15 @@ header img {
     text-transform: capitalize;
 }
 
+.skill-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-set {
+    width: 100%;
+}
+
 .progress-bar {
     display: flex;
     flex-direction: column;
@@ -355,7 +364,7 @@ header img {
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
     
 .progress {
