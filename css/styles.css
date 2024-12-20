@@ -326,7 +326,7 @@ header img {
   
 /* Skill Section */
 .skill {
-    padding: 80px 12rem 50px;
+    padding: 80px 14rem 50px;
     position: relative;
 }
 
@@ -345,7 +345,8 @@ header img {
 .skill-row {
     display: flex;
     flex-direction: row;
-}
+    gap: 85px;
+}   
 
 .skill-set {
     width: 100%;
@@ -375,7 +376,7 @@ header img {
     background: rgba(255,255,255,0.1);
     border-radius: 100px;
     height: 12px;
-    width: 50%;
+    width: 100%;
   }
   
   .progress-value {
