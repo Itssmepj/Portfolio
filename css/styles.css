@@ -340,6 +340,11 @@ header img {
     font-weight: 400;
     color: #7A7A7A;
     text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.skill-type:nth-child(1) {
+    margin-top: 65px;
 }
 
 .skill-row {
