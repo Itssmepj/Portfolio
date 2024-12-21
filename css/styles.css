@@ -378,22 +378,21 @@ header img {
     height: 13px;
     width: 100%;
     vertical-align: middle;
+    overflow: hidden;
 }
 
 .progress-value {
     background: #FF2868;
-    height: 13px;
-    width: 0;
+    height: 100%;
     border-radius: 100px 0 0 100px;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
     font-weight: 400;
     font-style: italic;
     text-align: end;
-    padding: 0 20px 0 0;
-    animation: load 3s normal forwards;
-  }
-  
-  @keyframes load {
-    0% { width: 0; }
-    100% { width: 80%; }
-  }
+    white-space: nowrap;
+}

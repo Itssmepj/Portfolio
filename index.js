@@ -1,3 +1,4 @@
+// Accordion
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 
 accordionHeaders.forEach(header => {
@@ -30,5 +31,22 @@ accordionHeaders.forEach(header => {
         otherIcon.classList.replace('fa-chevron-up', 'fa-chevron-down');
       }
     });
+  });
+});
+
+
+// Progress Bar
+document.addEventListener("DOMContentLoaded", () => {
+  const progressBars = document.querySelectorAll(".progress");
+
+  progressBars.forEach((progress) => {
+      const percentage = progress.getAttribute("data-percentage");
+      const progressValue = progress.querySelector(".progress-value");
+      
+      // Set the width of the progress-value dynamically
+      progressValue.style.width = percentage + "%";
+
+      // Set the percentage text
+      progressValue.textContent = percentage + "%";
   });
 });
