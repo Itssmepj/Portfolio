@@ -10,7 +10,17 @@
 body {
     font-family: "Open Sans", serif;
     background: #000;
+    cursor: url("../images/arrow.webp"), auto;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+	cursor: url("../images/pointer.webp"), auto !important;
+}
+
 
 .hero, .about, .education, .skill, .projects, .testimonial, .cta, .footer {
     background: linear-gradient(343deg, #FFFFFF -140%, #000000 53%);
@@ -326,7 +336,7 @@ header img {
   
 /* Skill Section */
 .skill {
-    padding: 90px 14rem 50px;
+    padding: 90px 14rem 130px;
     position: relative;
 }
 
@@ -400,4 +410,12 @@ header img {
     font-style: italic;
     text-align: end;
     white-space: nowrap;
+}
+
+.skill .up-arrow {
+    bottom: 4rem;
+}
+
+.skill .down-arrow {
+    bottom: 9rem;
 }
