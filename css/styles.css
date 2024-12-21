@@ -419,3 +419,13 @@ header img {
 .skill .down-arrow {
     bottom: 9rem;
 }
+
+/* Projects Section */
+.project {
+    padding: 90px 12rem 55px;
+    position: relative;
+}
+
+.project .row {
+    text-align: center;
+}
