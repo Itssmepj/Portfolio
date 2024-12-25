@@ -75,8 +75,8 @@ a, a:hover, a:active, a:visited {
 }
 
 .fa-link {
-    font-size: 24px;
-    padding: 10px 7px;
+    font-size: 23px;
+    padding: 10.5px 7px;
     margin-left: 0 !important;    
 }
 
@@ -432,29 +432,36 @@ header img {
 
 /* Projects Section */
 .project {
-    padding: 90px 12rem 55px;
+    padding: 100px 12rem 55px;
     position: relative;
-}
-
-.project .row {
     text-align: center;
 }
 
+.project .section-title {
+    margin-bottom: 85px;
+}
 
-.content{
+.project .row {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.content {
     position: relative;
-    width: 90%;
+    width: 85%;
     max-width: 400px;
     margin: auto;
     overflow: hidden
 }
 
-.content .project-overlay{
-    background: rgba(0,0,0,0.7);
+.content .project-overlay { 
+    background: #ff2868f0;
     position: absolute;
     height: 99%;
     width: 100%;
     opacity: 0;
+    border-radius: 10px;
     -webkit-transition: all 0.4s ease-in-out 0s;-moz-transition: all 0.4s ease-in-out 0s;transition: all 0.4s ease-in-out 0s}
     
 .content:hover .project-overlay {
@@ -509,6 +516,12 @@ header img {
 
 .fadeIn-bottom {
     top: 80%;
+}
+
+.project .icon-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .project .icon-btn {
