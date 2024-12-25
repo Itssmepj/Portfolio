@@ -74,6 +74,12 @@ a, a:hover, a:active, a:visited {
     padding: 9px;
 }
 
+.fa-link {
+    font-size: 24px;
+    padding: 10px 7px;
+    margin-left: 0 !important;    
+}
+
 .main-btn:hover {
     color: #fff;
     background: #7A7A7A;
@@ -503,4 +509,15 @@ header img {
 
 .fadeIn-bottom {
     top: 80%;
+}
+
+.project .icon-btn {
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.project .icon-btn:hover {
+    color: #FF2868;
 }
