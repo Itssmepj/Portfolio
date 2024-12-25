@@ -449,7 +449,7 @@ header img {
 
 .content {
     position: relative;
-    width: 85%;
+    width: 80%;
     max-width: 400px;
     margin: auto;
     overflow: hidden
@@ -505,7 +505,6 @@ header img {
     color: #fff;
     font-size: 24px;
     font-weight: 500;
-    
     margin-bottom: 0.5em;
 }
 
