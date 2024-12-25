@@ -43,7 +43,7 @@ a, a:hover, a:active, a:visited {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 500;
-    letter-spacing: 0.5;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     padding: 12px 36px;
     border: 2px solid #FF2868;
@@ -531,4 +531,17 @@ header img {
 
 .project .icon-btn:hover {
     color: #FF2868;
+}
+
+.project .main-btn {
+    color: #fff;
+    margin-top: 35px;
+}
+
+.project .up-arrow {
+    bottom: 4rem;
+}
+
+.project .down-arrow {
+    bottom: 9rem;
 }
