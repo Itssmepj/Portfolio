@@ -37,6 +37,7 @@ a, a:hover, a:active, a:visited {
     text-transform: uppercase;
     margin-bottom: 65px;
     color: #fff;
+    text-align: center;
 }
 
 .main-btn, .other-btn {
@@ -544,4 +545,10 @@ header img {
 
 .project .down-arrow {
     bottom: 8rem;
+}
+
+/* Testimonial Section */
+.testimonial {
+    padding: 90px 14rem 130px;
+    position: relative;
 }
