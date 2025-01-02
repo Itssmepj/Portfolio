@@ -590,10 +590,6 @@ header img {
     flex: 0 0 calc(100% - 20px); /* Adjust slide width */
     margin-right: 20px; /* Add gap between slides */
     box-sizing: border-box;
-    padding: 20px;
-    border: 2px solid #FF2868;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1);
 }
   
   .testimonial-bubble:last-child {
@@ -601,11 +597,14 @@ header img {
 }
   
 .testimonial-bubble h3 {
-    color: #e91e63;
+    color: #FF2868;
     margin: 15px 0 5px;
 }
   
-.testimonial-bubble p {
+.testimonial-bubble p:nth-child(1) {
+    padding: 20px;
+    border: 2px solid #FF2868;
+    border-radius: 10px;
     font-size: 1rem;
     line-height: 1.5;
 }  
