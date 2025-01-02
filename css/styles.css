@@ -26,16 +26,16 @@ a, a:hover, a:active, a:visited {
 }
 
 
-.hero, .about, .education, .skill, .projects, .testimonial, .cta, .footer {
+.hero, .about, .education, .skill, .project, .testimonial, .cta, .footer {
     background: linear-gradient(343deg, #FFFFFF -140%, #000000 53%);
     color: white;
 }
 
 .section-title {
-    font-size: 21px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 65px;
+    margin-bottom: 58px;
     color: #fff;
     text-align: center;
 }
@@ -551,4 +551,100 @@ header img {
 .testimonial {
     padding: 90px 14rem 130px;
     position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.carousel-container {
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+}
+  
+  .carousel {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial-bubble {
+    flex: 0 0 calc(100% - 20px); /* Adjust slide width */
+    margin-right: 20px; /* Add gap between slides */
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid #e91e63;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .testimonial-bubble:last-child {
+    margin-right: 0; /* Remove margin for the last slide */
+  }
+  
+  .testimonial-bubble h3 {
+    color: #e91e63;
+    margin: 15px 0 5px;
+  }
+  
+  .testimonial-bubble p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .control {
+    background: rgba(255, 255, 255, 0.2);
+    color: #e91e63;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+    position: absolute;
+  }
+  
+  .control.prev {
+    left: -40px; /* Position the left arrow outside the border */
+  }
+  
+  .control.next {
+    right: -40px; /* Position the right arrow outside the border */
+  }
+  
+  .control:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #e91e63;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background: #fff;
+  }
+  

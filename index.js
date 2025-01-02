@@ -1,4 +1,4 @@
-// Accordion
+// Edu/Exp Accordion
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 
 accordionHeaders.forEach(header => {
@@ -33,7 +33,7 @@ accordionHeaders.forEach(header => {
     });
   });
 });
-
+//End of Edu/Exp Accordion
 
 // Progress Bar
 document.addEventListener("DOMContentLoaded", () => {
@@ -50,3 +50,36 @@ document.addEventListener("DOMContentLoaded", () => {
       progressValue.textContent = percentage + "%";
   });
 });
+// End of Progress Bar
+
+
+// Testimonial Section
+const carouselInner = document.querySelector('.carousel-inner');
+const dots = document.querySelectorAll('.dot');
+let currentIndex = 0;
+
+function updateCarousel() {
+  const offset = currentIndex * -100;
+  carouselInner.style.transform = `translateX(${offset}%)`;
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentIndex);
+  });
+}
+
+document.querySelector('.next').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % dots.length;
+  updateCarousel();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + dots.length) % dots.length;
+  updateCarousel();
+});
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    currentIndex = index;
+    updateCarousel();
+  });
+});
+// End of Testimonial Section
