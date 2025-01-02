@@ -558,8 +558,6 @@ header img {
   color: #ccc;
 }
 
-
-
 /* Testimonial Section */
 .testimonial {
     padding: 90px 14rem 130px;
@@ -576,38 +574,50 @@ header img {
     position: relative;
 }
   
-  .carousel {
+.carousel {
     overflow: hidden;
     position: relative;
-  }
+}
   
-  .carousel-inner {
+.carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
+}
   
-  .testimonial-bubble {
-    flex: 0 0 calc(100% - 20px); /* Adjust slide width */
-    margin-right: 20px; /* Add gap between slides */
+.testimonial-bubble {
+    flex: 0 0 calc(100% - 20px);
+    margin-right: 20px;
     box-sizing: border-box;
 }
   
-  .testimonial-bubble:last-child {
-    margin-right: 0; /* Remove margin for the last slide */
+.testimonial-bubble:last-child {
+    margin-right: 0;
 }
   
 .testimonial-bubble h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
     color: #FF2868;
-    margin: 15px 0 5px;
+    margin: 42px 0 5px;
 }
   
 .testimonial-bubble p:nth-child(1) {
+    font-size: 21px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
     padding: 20px;
     border: 2px solid #FF2868;
     border-radius: 10px;
-    font-size: 1rem;
-    line-height: 1.5;
-}  
+}
+
+.testimonial-bubble p:nth-child(3) {
+    font-size: 19px;
+    font-weight: 400;
+    color: #7A7A7A;
+}
 
 .controls {
     position: absolute;
@@ -633,30 +643,30 @@ header img {
     left: -115px; /* Position the left arrow outside the border */
 }
   
-  .control.next {
+.control.next {
     right: -90px; /* Position the right arrow outside the border */
-  }
+}
   
-  .control:hover {
+.control:hover {
     color: #FF2868;
-  }
+}
   
-  .dots {
+.dots {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
-  }
+}
   
-  .dot {
+.dot {
     width: 10px;
     height: 10px;
     background: #FF2868;
     border-radius: 50%;
     cursor: pointer;
-  }
+}
   
-  .dot.active {
+.dot.active {
     background: #fff;
-  }
+}
   
