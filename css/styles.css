@@ -474,7 +474,6 @@ header img {
 }
 
 .project img { 
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px
 }
 
@@ -547,6 +546,20 @@ header img {
     bottom: 8rem;
 }
 
+/* Author Details */
+.author-details h4 {
+  margin: 0;
+  color: #FF2868;
+}
+
+.author-details p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+
 /* Testimonial Section */
 .testimonial {
     padding: 90px 14rem 130px;
@@ -578,55 +591,55 @@ header img {
     margin-right: 20px; /* Add gap between slides */
     box-sizing: border-box;
     padding: 20px;
-    border: 2px solid #e91e63;
+    border: 2px solid #FF2868;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
-  }
+}
   
   .testimonial-bubble:last-child {
     margin-right: 0; /* Remove margin for the last slide */
-  }
+}
   
-  .testimonial-bubble h3 {
+.testimonial-bubble h3 {
     color: #e91e63;
     margin: 15px 0 5px;
-  }
+}
   
-  .testimonial-bubble p {
+.testimonial-bubble p {
     font-size: 1rem;
     line-height: 1.5;
-  }
-  
-  .controls {
+}  
+
+.controls {
     position: absolute;
     top: 50%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
-  }
+}
   
-  .control {
-    background: rgba(255, 255, 255, 0.2);
-    color: #e91e63;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background 0.3s;
+.control {
     position: absolute;
-  }
+    background: transparent;
+    color: #ffffff;
+    font-size: 32px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
   
-  .control.prev {
-    left: -40px; /* Position the left arrow outside the border */
-  }
+.control.prev {
+    left: -115px; /* Position the left arrow outside the border */
+}
   
   .control.next {
-    right: -40px; /* Position the right arrow outside the border */
+    right: -90px; /* Position the right arrow outside the border */
   }
   
   .control:hover {
-    background: rgba(255, 255, 255, 0.5);
+    color: #FF2868;
   }
   
   .dots {
@@ -639,7 +652,7 @@ header img {
   .dot {
     width: 10px;
     height: 10px;
-    background: #e91e63;
+    background: #FF2868;
     border-radius: 50%;
     cursor: pointer;
   }
