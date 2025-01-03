@@ -52,6 +52,11 @@ a, a:hover, a:active, a:visited {
     background: #FF2868;
 }
 
+.project .main-btn, .testimonial .main-btn {
+    color: #fff;
+    margin-top: 35px;
+}
+
 .other-btn {
     background: #000;
     color: #fff;
@@ -433,7 +438,7 @@ header img {
 
 /* Projects Section */
 .project {
-    padding: 100px 12rem 85px;
+    padding: 100px 12rem 100px;
     position: relative;
     text-align: center;
 }
@@ -533,11 +538,6 @@ header img {
     color: #FF2868;
 }
 
-.project .main-btn {
-    color: #fff;
-    margin-top: 35px;
-}
-
 .project .up-arrow {
     bottom: 3rem;
 }
@@ -548,9 +548,10 @@ header img {
 
 /* Testimonial Section */
 .testimonial {
-    padding: 90px 14rem 130px;
+    padding: 90px 14rem 100px;
     position: relative;
     margin: 0;
+    text-align: center;
 }
 
 .testimonial .row {
@@ -661,4 +662,15 @@ header img {
 .dot.active {
     background: #FF2868;
 }
-  
+
+.testimonial .main-btn {
+    margin-top: 60px;
+}
+
+.testimonial .up-arrow {
+    bottom: 3rem;
+}
+
+.testimonial .down-arrow {
+    bottom: 8rem;
+}
