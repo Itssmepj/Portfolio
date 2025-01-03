@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 }
 
 a {
-	cursor: url("../images/pointer.webp"), auto !important;
+    cursor: url("../images/pointer.webp"), auto !important;
 }
 
 a, a:hover, a:active, a:visited {
