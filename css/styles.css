@@ -711,5 +711,26 @@ header img {
     color: #FF2868;
     font-weight: bolder;
 }
+
+input[type=text], textarea {
+    font-family: "Open Sans", serif;
+    font-size: 17px;
+    font-weight: 600;
+    width: 90%;
+    padding: 6px;
+    border: 3px solid #54595F;
+    background: #000;
+    color: #54595F;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+#fname, #lname {
+    width: 43%;
+    margin-left: 19px;
+    margin-right: 19px;
+}
 /* Cta Section Ends*/
 
