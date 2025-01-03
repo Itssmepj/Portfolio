@@ -18,13 +18,12 @@ body::-webkit-scrollbar {
 }
 
 a {
-    cursor: url("../images/pointer.webp"), auto !important;
+    cursor: url("../images/pointer.jpg"), auto !important;
 }
 
 a, a:hover, a:active, a:visited {
     text-decoration: none !important;
 }
-
 
 .hero, .about, .education, .skill, .project, .testimonial, .cta, .footer {
     background: linear-gradient(343deg, #FFFFFF -140%, #000000 53%);
