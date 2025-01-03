@@ -122,7 +122,7 @@ header img {
     max-width: 100%;
 }
 
-/* Hero Section */
+/* Hero Section Starts */
 .hero {
     height: 89vh;
     display: flex;
@@ -185,8 +185,10 @@ header img {
     display: flex;
     gap: 30px;
 }
+/* Hero Section Ends*/
 
-/* About Section */
+
+/* About Section Starts*/
 .about {
     height: 95vh;
     display: flex;
@@ -222,8 +224,10 @@ header img {
 .about .down-arrow {
     bottom: 9rem;
 }
+/* About Section Ends*/
 
-/* Education Section */
+
+/* Education Section Starts*/
 .education {
     padding: 130px 12rem 150px;
     position: relative;
@@ -338,7 +342,7 @@ header img {
 }
   
 .accordion-header.active .icon i {
-    transform: rotate(180deg); /* Flip Chevron Up */
+    transform: rotate(180deg);
 }
 
 .education .up-arrow {
@@ -348,8 +352,10 @@ header img {
 .education .down-arrow {
     bottom: 9rem;
 }
-  
-/* Skill Section */
+/* Education Section Ends*/
+
+
+/* Skill Section Starts*/
 .skill {
     padding: 90px 14rem 130px;
     position: relative;
@@ -434,8 +440,10 @@ header img {
 .skill .down-arrow {
     bottom: 9rem;
 }
+/* Skill Section Ends*/
 
-/* Projects Section */
+
+/* Projects Section Starts */
 .project {
     padding: 100px 12rem 100px;
     position: relative;
@@ -544,8 +552,10 @@ header img {
 .project .down-arrow {
     bottom: 8rem;
 }
+/* Project Section Ends*/
 
-/* Testimonial Section */
+
+/* Testimonial Section Starts*/
 .testimonial {
     padding: 90px 14rem 100px;
     position: relative;
@@ -673,3 +683,21 @@ header img {
 .testimonial .down-arrow {
     bottom: 8rem;
 }
+/* Testimonial Section Ends */
+
+
+
+/* Cta Section Starts*/
+.cta {
+    padding: 90px 14rem 100px;
+    position: relative;
+    text-align: center;
+}
+
+.cta .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Cta Section Ends*/
+
