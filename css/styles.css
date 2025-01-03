@@ -546,30 +546,22 @@ header img {
     bottom: 8rem;
 }
 
-/* Author Details */
-.author-details h4 {
-  margin: 0;
-  color: #FF2868;
-}
-
-.author-details p {
-  margin: 5px 0 0;
-  font-size: 14px;
-  color: #ccc;
-}
-
 /* Testimonial Section */
 .testimonial {
     padding: 90px 14rem 130px;
     position: relative;
     margin: 0;
+}
+
+.testimonial .row {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .carousel-container {
-    max-width: 800px;
+    width: 85%;
     text-align: center;
     position: relative;
 }
@@ -608,7 +600,7 @@ header img {
     font-weight: 300;
     font-style: italic;
     line-height: 1.5;
-    padding: 20px;
+    padding: 25px;
     border: 2px solid #FF2868;
     border-radius: 10px;
 }
@@ -621,7 +613,7 @@ header img {
 
 .controls {
     position: absolute;
-    top: 50%;
+    top: 25%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -640,11 +632,11 @@ header img {
 }
   
 .control.prev {
-    left: -115px; /* Position the left arrow outside the border */
+    left: -100px;
 }
   
 .control.next {
-    right: -90px; /* Position the right arrow outside the border */
+    right: -80px;
 }
   
 .control:hover {
@@ -652,21 +644,21 @@ header img {
 }
   
 .dots {
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
   
 .dot {
-    width: 10px;
-    height: 10px;
-    background: #FF2868;
+    width: 7px;
+    height: 7px;
+    background: #7A7A7A;
     border-radius: 50%;
     cursor: pointer;
 }
   
 .dot.active {
-    background: #fff;
+    background: #FF2868;
 }
   
