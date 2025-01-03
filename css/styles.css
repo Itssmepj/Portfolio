@@ -48,17 +48,16 @@ a, a:hover, a:active, a:visited {
     padding: 12px 36px;
     border: 2px solid #FF2868;
     border-radius: 26px;
+    color: #fff;
     background: #FF2868;
 }
 
 .project .main-btn, .testimonial .main-btn {
-    color: #fff;
     margin-top: 35px;
 }
 
 .other-btn {
     background: #000;
-    color: #fff;
     border: 2px solid #FF2868;
 }
 
