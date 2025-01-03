@@ -696,8 +696,21 @@ header img {
 
 .cta .row {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.cta p {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.cta span {
+    color: #FF2868;
+    font-weight: bolder;
 }
 /* Cta Section Ends*/
 
