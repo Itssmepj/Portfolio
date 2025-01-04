@@ -15,6 +15,10 @@
         padding: 100px 6rem;
     }
 
+    .footer {
+        padding: 85px 8rem 45px;
+    }
+
     form {
         width: 100%;
     }
@@ -42,7 +46,19 @@
     }
 
     .about {
-        padding: 0px 3rem 20px;
+        padding: 0px 4rem 20px;
+    }
+
+    .education {
+        padding: 110px 4rem 120px;
+    }
+
+    .education .row {
+        gap: 70px;
+    }
+
+    .skill {
+        padding: 100px 4rem 120px;
     }
 }
 
