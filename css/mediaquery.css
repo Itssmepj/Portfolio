@@ -1,3 +1,25 @@
+@media only screen and (max-width: 1440px) {
+    .about {
+        padding: 0px 6rem 20px;
+    }
+
+    .education {
+        padding: 120px 6rem 130px;
+    }
+
+    .skill {
+        padding: 100px 6rem 130px;
+    }
+
+    .project, .testimonial {
+        padding: 100px 6rem;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     header img {
         width: 12%;
@@ -17,6 +39,10 @@
 
     .hero h2 {
         width: 95%;
+    }
+
+    .about {
+        padding: 0px 3rem 20px;
     }
 }
 
@@ -59,6 +85,10 @@
 
     .hero h2 {
         font-size: 18px;
+    }
+
+    .about .icon-button {
+        margin-top: 50px;
     }
 }
 
@@ -154,6 +184,10 @@
 @media only screen and (max-width: 390px) {
     header img {
         width: 35%;
+    }
+
+    .hero img:nth-child(1) {
+        width: 60%;
     }
 }
 
