@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 }
 
 a {
-    cursor: url("../images/pointer.jpg"), auto !important;
+    cursor: url("../images/pointer.webp"), auto !important;
 }
 
 a, a:hover, a:active, a:visited {
@@ -75,7 +75,7 @@ a, a:hover, a:active, a:visited {
 
 .fa-github {
     font-size: 27px;
-    padding: 9px;
+    padding: 9px 9.7px;
 }
 
 .fa-envelope {
@@ -764,7 +764,7 @@ input[type=text], textarea {
 
 /* Footer Section Starts */
 .footer {
-    padding: 85px 12rem 130px;
+    padding: 85px 12rem 45px;
 }
 
 footer .col {
@@ -789,7 +789,15 @@ footer .icon-button {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 80px;
+    margin-top: 45px;
+}
+
+.copyright {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #575656;
+    margin-top: 100px;
 }
 /* Footer Section Ends */
 
