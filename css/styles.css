@@ -712,6 +712,15 @@ header img {
     font-weight: bolder;
 }
 
+.cta > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 89%;
+}
+
 input[type=text], textarea {
     font-family: "Open Sans", serif;
     font-size: 17px;
@@ -729,8 +738,8 @@ input[type=text], textarea {
 
 #fname, #lname {
     width: 43%;
-    margin-left: 19px;
-    margin-right: 19px;
+    margin-left: 17px;
+    margin-right: 17px;
 }
 /* Cta Section Ends*/
 
