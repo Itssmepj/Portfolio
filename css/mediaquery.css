@@ -112,7 +112,8 @@
     }
 
     .about {
-        padding: 0px 2rem;
+        padding: 0px 2rem 20px;
+        height: 90vh;
     }
 
     .about p {
@@ -147,11 +148,24 @@
     .hero h2 {
         font-size: 17px;
     }
+
+    .about p {
+        font-size: 22px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     header img {
         width: 17%;
+    }
+
+    .section-title {
+        margin-bottom: 45px;
+    }
+
+    .about {
+        padding: 15px 2rem 20px;
+        height: 80vh;
     }
 }
 
