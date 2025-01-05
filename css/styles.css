@@ -25,8 +25,8 @@ a, a:hover, a:active, a:visited {
     text-decoration: none !important;
 }
 
-img{
-    cursor: inherit;
+img {
+    cursor: url("../images/pointer.webp"), auto !important;
 }
 
 .hero, .about, .education, .skill, .project, .testimonial, .cta, .footer {
@@ -276,7 +276,7 @@ header img {
     justify-content: space-between;
     align-items: center;
     padding: 12px 20px;
-    cursor: pointer;
+    cursor: url("../images/pointer.webp"), auto !important;
     background: transparent;
     border: 2px solid #54595F;
     border-radius: 10px 10px 0 0;
@@ -653,7 +653,7 @@ header img {
     font-size: 32px;
     padding: 10px 20px;
     border: none;
-    cursor: pointer;
+    cursor: url("../images/pointer.webp"), auto !important;
     transition: background 0.3s;
 }
   
@@ -681,7 +681,7 @@ header img {
     height: 7px;
     background: #7A7A7A;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: url("../images/pointer.webp"), auto !important;
 }
   
 .dot.active {
@@ -819,7 +819,7 @@ button.scroltop {
     line-height: 32px;
     text-align: center;
     border: none;
-    cursor: pointer;
+    cursor: url("../images/pointer.webp"), auto !important;
     display: none;
     z-index: 999;
     transition: all 0.8s;
