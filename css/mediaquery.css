@@ -137,6 +137,10 @@
         width: 16%;
     }
 
+    .section-title {
+        margin-bottom: 40px;
+    }
+
     .hero img:nth-child(1) {
         width: 30%;
     }
@@ -159,13 +163,13 @@
         width: 17%;
     }
 
-    .section-title {
-        margin-bottom: 45px;
-    }
-
     .about {
         padding: 15px 2rem 20px;
         height: 80vh;
+    }
+
+    .about p {
+        font-size: 20px;
     }
 }
 
