@@ -24,6 +24,17 @@
     }
 }
 
+@media only screen and (max-width: 1250px) {
+    .education {
+        padding: 95px 5rem 130px;
+    }
+
+    .education .row {
+        gap: 80px;
+    }
+}
+
+
 @media only screen and (max-width: 1200px) {
     header img {
         width: 12%;
@@ -107,7 +118,7 @@
         justify-content: center;
     }
 
-    .hero h2, .about p {
+    .hero h2, .about p, .cta p {
         font-size: 18px;
     }
 
@@ -145,7 +156,7 @@
         font-size: 38px;
     }
 
-    .hero h2, .about p {
+    .hero h2, .about p, .cta p {
         font-size: 18px;
     }
 
@@ -223,7 +234,6 @@
         flex-direction: column;
         gap: 22px;
     }
-
 }
 
 @media only screen and (max-width: 470px) {
@@ -242,6 +252,11 @@
     .hero img:nth-child(1) {
         width: 50%;
     }
+
+    .about {
+        height: 79vh;
+    }
+
 }
 
 @media only screen and (max-width: 390px) {
@@ -255,6 +270,10 @@
 
     .hero img:nth-child(1) {
         width: 60%;
+    }
+
+    .about {
+        height: 84vh;
     }
 }
 
