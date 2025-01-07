@@ -61,7 +61,7 @@
     }
 
     .education {
-        padding: 110px 4rem 120px;
+        padding: 85px 3rem 105px;
     }
 
     .education .row {
@@ -139,6 +139,13 @@
 }
 
 
+@media only screen and (max-width: 900px) {
+    .education .row {
+        gap: 85px;
+        flex-wrap: wrap;
+    }
+}
+
 @media only screen and (max-width: 825px) {
     header img {
         width: 16%;
@@ -162,6 +169,10 @@
 
     .about {
         height: 87vh;
+    }
+
+    .education .col-md-6 {
+        width: 100%;
     }
 }
 
