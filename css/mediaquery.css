@@ -130,6 +130,10 @@
     .about .icon-button {
         margin-top: 50px;
     }
+
+    .education .row {
+        gap: 55px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -144,9 +148,17 @@
         gap: 85px;
         flex-wrap: wrap;
     }
-    
+
     .education .col-md-6 {
         width: 100%;
+    }
+
+    .skill {
+        padding: 100px 3rem 105px;
+    }
+
+    .skill-row {
+        gap: 62px;
     }
 }
 
@@ -173,6 +185,10 @@
 
     .about {
         height: 87vh;
+    }
+
+    .skill-row {
+        gap: 55px;
     }
 }
 
@@ -214,9 +230,8 @@
         width: 40%;
     }
 
-    .about {
-        padding: 15px 1rem 20px;
-        height: 75vh;
+    .education {
+        padding: 85px 2rem 90px;
     }
 }
 
