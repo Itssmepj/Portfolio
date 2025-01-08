@@ -144,6 +144,10 @@
         gap: 85px;
         flex-wrap: wrap;
     }
+    
+    .education .col-md-6 {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 825px) {
@@ -169,10 +173,6 @@
 
     .about {
         height: 87vh;
-    }
-
-    .education .col-md-6 {
-        width: 100%;
     }
 }
 
