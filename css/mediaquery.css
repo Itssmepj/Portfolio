@@ -202,9 +202,17 @@
         height: 75vh;
     }
 
+    .skill {
+        padding: 90px 3rem;
+    }
+
     .skill-row {
         gap: 0;
         flex-wrap: wrap;
+    }
+    
+    .skill-type:nth-child(1) {
+        margin-top: 50px;
     }
 
     .skill-row .skill-set:nth-child(2) .progress-bar:nth-child(1), .skill-row:nth-child(2) .skill-set:nth-child(2) .progress-bar:nth-child(1) {
