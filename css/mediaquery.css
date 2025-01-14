@@ -133,11 +133,24 @@
     .education .row {
         gap: 55px;
     }
+
+    .content {
+        position: relative;
+        width: 85%;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .hero h1, .hero span {
         font-size: 47px;
+    }
+
+    .project, .testimonial {
+        padding: 100px 3rem;
+    }
+
+    .project .row {
+        margin-top: 35px;
     }
 }
 
