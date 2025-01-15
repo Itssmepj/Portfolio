@@ -188,7 +188,7 @@
     }
 
     .section-title {
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
 
     .hero img:nth-child(1) {
@@ -214,13 +214,27 @@
     .skill-row {
         gap: 55px;
     }
+
+    .project .section-title {
+        margin-bottom: 68px;
+    }    
+
+    .fa-link {
+        font-size: 17px;
+        padding: 8.5px 6.5px;
+    }
+
+    .project .fa-github {
+        font-size: 22px;
+        padding: 6px 6.5px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     header img {
         width: 17%;
     }    
-    
+
     .hero h2, .about p, .cta p {
         font-size: 18px;
     }
