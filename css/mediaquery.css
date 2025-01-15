@@ -138,6 +138,10 @@
         position: relative;
         width: 85%;
     }
+
+    .project-details h3 {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -145,7 +149,11 @@
         font-size: 47px;
     }
 
-    .project, .testimonial {
+    .project {
+        padding: 100px 2rem;
+    }
+
+    .testimonial {
         padding: 100px 3rem;
     }
 

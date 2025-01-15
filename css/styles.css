@@ -75,6 +75,13 @@ img {
     cursor: inherit;
 }
 
+.icon-btn:hover{
+    background: #fff;
+    color: #7A7A7A;
+    border: 2px solid #fff;
+    
+}
+
 .fa-linkedin-in {
     font-size: 25px;
     padding: 10px 12px;
