@@ -469,7 +469,7 @@ header img {
 
 /* Projects Section Starts */
 .project {
-    padding: 100px 12rem 100px;
+    padding: 100px 10rem 100px;
     position: relative;
     text-align: center;
 }
@@ -482,6 +482,7 @@ header img {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .content {
