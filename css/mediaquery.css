@@ -145,6 +145,14 @@
     .project-details h3 {
         font-size: 20px;
     }
+
+    .testimonial-bubble p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .dots {
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -267,6 +275,18 @@
     .skill-type {
         font-size: 23px;
     }
+
+    .project .testimonial {
+        padding: 90px 2rem;
+    }
+
+    .control.prev {
+        left: -70px;
+    }
+      
+    .control.next {
+        right: -50px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -338,6 +358,10 @@
     .hero .col {
         margin-bottom: 95px;
     }
+
+    .content {
+        width: 72%;
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -378,6 +402,10 @@
 
     .about {
         height: 84vh;
+    }
+
+    .content {
+        width: 85%;
     }
 }
 
