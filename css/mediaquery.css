@@ -11,7 +11,11 @@
         padding: 100px 6rem 130px;
     }
 
-    .project, .testimonial {
+    .project {
+        padding: 100px 1rem;
+    }
+
+    .testimonial {
         padding: 100px 6rem;
     }
 
@@ -71,7 +75,11 @@
         padding: 100px 4rem 120px;
     }
 
-    .project, .testimonial {
+    .project {
+        padding: 100px 0;
+    }
+
+    .testimonial {
         padding: 100px 4rem;
     }
 }
@@ -132,11 +140,6 @@
 
     .education .row {
         gap: 55px;
-    }
-
-    .content {
-        position: relative;
-        width: 85%;
     }
 
     .project-details h3 {
@@ -273,6 +276,14 @@
 
     .hero img:nth-child(1) {
         width: 34%;
+    }
+
+    .content {
+        width: 65%;
+    }
+
+    .project .col-md-4 {
+        margin-bottom: 40px;
     }
 }
 

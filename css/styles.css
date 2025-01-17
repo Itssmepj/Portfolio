@@ -259,11 +259,11 @@ header img {
 
 .education .row {
     display: flex;
-    gap: 75px;
+    gap: 100px;
 }
 
 .education .col-md-6 {
-    width: 46%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
