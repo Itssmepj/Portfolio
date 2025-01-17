@@ -8,6 +8,7 @@
     <meta name="site_name" content="PJ Portfolio"> 
     <meta name="author" content="Pranjal Lakhera">
     <title>PJ Portfolio</title>
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- CSS Stylingsheets -->
     <link rel="stylesheet" href="css/styles.css">
@@ -21,7 +22,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
                                                                                   
-    <!-- Icons -->
+    <!-- Icons -->  
     <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
 
 </head>
@@ -69,7 +70,7 @@
           <div class="container">
            <div class="row">
             <div class="col">
-             <h2 class="section-title">About me</h2>
+             <h2 class="section-title animate__fadeInDown">About me</h2>
              <p>I come from a non-IT background and have successfully transitioned into the tech world by mastering essential web development languages, including <span>HTML</span> , <span>CSS</span> , and <span>JavaScript</span>.</p>
              <br>
              <p>With over 1 years of hands-on experience, I've developed a passion for WordPress development and client satisfaction, aiming to create websites that not only look great but also perform flawlessly.</p>
@@ -645,7 +646,7 @@
      <button class="scroltop fa fa-chevron-up" onclick="scrollToTop()" id="back-to-up"></button>
 
     <!-- Javascript Links -->
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
      var typed = new Typed('.auto-type', {
@@ -656,6 +657,11 @@
         loop: true
       });
     </script>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 
 </body>
 </html>

@@ -136,6 +136,55 @@ img {
     cursor: inherit;
 }
 
+
+/* Scroll to Top */
+button.scroltop {
+    position: fixed;
+    bottom: 70px;
+    right: 35px;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    background: #4c0117;
+    color: #fff !important;
+    line-height: 32px;
+    text-align: center;
+    border: none;
+    cursor: url("../images/pointer.webp"), auto !important;
+    display: none;
+    z-index: 999;
+    transition: all 0.8s;
+    display: none;
+}
+
+button.scroltop:focus {
+    outline: none;
+}
+
+button.scroltop:hover, button.scroltop:hover:after {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+button.scroltop:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    content: "";
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    background: #4c0117;
+    border: 3px solid #ff2868;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.fa-chevron-up:before {
+    content: "\f077";
+}
+
+/* Header */
 header .col {
     display: flex;
     justify-content: center;
@@ -821,48 +870,4 @@ footer .icon-button {
 }
 /* Footer Section Ends */
 
-button.scroltop {
-    position: fixed;
-    bottom: 70px;
-    right: 35px;
-    border-radius: 50%;
-    height: 36px;
-    width: 36px;
-    background: #4c0117;
-    color: #fff !important;
-    line-height: 32px;
-    text-align: center;
-    border: none;
-    cursor: url("../images/pointer.webp"), auto !important;
-    display: none;
-    z-index: 999;
-    transition: all 0.8s;
-    display: none;
-}
 
-button.scroltop:focus {
-    outline: none;
-}
-
-button.scroltop:hover, button.scroltop:hover:after {
-    transform: scale(1.2);
-    opacity: 0.8;
-}
-
-button.scroltop:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    content: "";
-    top: -2px;
-    left: -2px;
-    z-index: -1;
-    background: #4c0117;
-    border: 3px solid #ff2868;
-    transition: transform 0.2s, opacity 0.3s;
-}
-
-.fa-chevron-up:before {
-    content: "\f077";
-}
