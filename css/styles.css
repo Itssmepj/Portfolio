@@ -617,7 +617,7 @@ header img {
   
 .testimonial-bubble {
     flex: 0 0 calc(100% - 20px);
-    margin-right: 20px;
+    margin: 0 20px;
     box-sizing: border-box;
 }
   
@@ -671,7 +671,7 @@ header img {
 }
   
 .control.prev {
-    left: -100px;
+    left: -80px;
 }
   
 .control.next {
