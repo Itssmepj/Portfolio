@@ -783,7 +783,7 @@ input[type=text], textarea {
 
 /* Footer Section Starts */
 .footer {
-    padding: 85px 12rem 45px;
+    padding: 85px 12rem 20px;
 }
 
 footer .col {
@@ -799,6 +799,7 @@ footer img {
 }
 
 footer p {
+    text-align: center;
     font-size: 20px;
     font-weight: 500;
     color: #7A7A7A;

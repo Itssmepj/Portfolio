@@ -20,7 +20,7 @@
     }
 
     .footer {
-        padding: 85px 8rem 45px;
+        padding: 85px 8rem 20px;
     }
 
     form {
@@ -41,6 +41,10 @@
 @media only screen and (max-width: 1200px) {
     header img {
         width: 12%;
+    }
+
+    footer img {
+        width: 15%;
     }
 
     .hero .col-md-6:nth-child(1) {
@@ -91,6 +95,11 @@
 @media only screen and (max-width: 1024px) {
     header img {
         width: 14%;
+        margin-bottom: 30px;
+    }
+
+    footer img {
+        width: 18%;
     }
 
     .section-title {
@@ -117,7 +126,7 @@
         width: 100%;
         text-align: center;
         margin-top: 60px;
-        padding: 0 35px;
+        padding: 0 30px;
     }
 
     .hero img:nth-child(1) {
@@ -129,7 +138,7 @@
         justify-content: center;
     }
 
-    .hero h2, .about p, .cta p {
+    .hero h2, .about p, .cta p, footer p {
         font-size: 20px;
     }
 
@@ -164,6 +173,10 @@
 }
 
 @media only screen and (max-width: 992px) {
+    footer img {
+        width: 20%;
+    }
+
     .hero h1, .hero span {
         font-size: 47px;
     }
@@ -202,7 +215,7 @@
 }
 
 @media only screen and (max-width: 825px) {
-    header img {
+    header img, footer img {
         width: 16%;
     }
 
@@ -218,7 +231,7 @@
         font-size: 38px;
     }
 
-    .hero h2, .about p, .cta p {
+    .hero h2, .about p, .cta p, footer p {
         font-size: 19px;
     }
 
@@ -251,14 +264,22 @@
     input[type=text], textarea {
         width: 91%;
     }
+
+    .footer {
+        padding: 85px 1rem 20px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     header img {
         width: 17%;
-    }    
+    } 
+    
+    footer img {
+        width: 19%;
+    }
 
-    .hero h2, .about p, .cta p {
+    .hero h2, .about p, .cta p, footer p {
         font-size: 18px;
     }
 
@@ -331,6 +352,10 @@
         width: 19%;
     }
 
+    footer img {
+        width: 21%;
+    }
+
     .hero img:nth-child(1) {
         width: 34%;
     }
@@ -350,15 +375,27 @@
 
 @media only screen and (max-width: 630px) {
     .fa-linkedin-in {
-        padding: 8px 10px;
+        padding: 9px 10px;
     }
 
     .fa-github {
         padding: 8px 8.7px;
     }
 
+    .fa-envelope {
+        padding: 9px;
+    }
+
+    .fa-youtube {
+        padding: 9px 7px;
+    }
+
     header img {
         width: 22%;
+    }
+
+    footer img {
+        width: 23%;
     }
 
     .hero img:nth-child(1) {
@@ -391,6 +428,10 @@
 
     header img {
         width: 25%;
+    }
+
+    footer img {
+        width: 28%;
     }
 
     .hero {
@@ -435,6 +476,10 @@
         font-size: 17px;
     }
 
+    .cta {
+        padding: 90px 1rem;
+    }
+
     input[type=text], textarea {
         width: 89.7%;
     }
@@ -450,6 +495,10 @@
         width: 30%;
     }
 
+    footer img {
+        width: 32.5%;
+    }
+
     .hero {
         padding: 5.5rem 0 4rem;
     }
@@ -462,10 +511,14 @@
         height: 79vh;
     }
 
+    input[type=text], textarea {
+        width: 91%;
+    }
+
 }
 
 @media only screen and (max-width: 390px) {
-    header img {
+    header img, footer img {
         width: 35%;
     }
 
@@ -484,5 +537,16 @@
     .content {
         width: 85%;
     }
+
+    #fname, #lname, input[type=text], textarea {
+        width: 92%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 370px) {
+
 }
 
