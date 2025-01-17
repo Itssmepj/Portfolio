@@ -8,8 +8,10 @@
     <meta name="site_name" content="PJ Portfolio"> 
     <meta name="author" content="Pranjal Lakhera">
     <title>PJ Portfolio</title>
-    <link rel="icon" href="favicon.ico">
-    <!-- Links -->
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 
     <!-- CSS Stylingsheets -->
     <link rel="stylesheet" href="css/styles.css">
@@ -17,7 +19,6 @@
     <!-- Media-Query Stylingsheets -->
     <link rel="stylesheet" href="css/mediaquery.css">
 
-      
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -48,7 +49,6 @@
     <!-- Main Start -->
     <main>
         <section id="hero" class="hero">
-          <div class="container">
             <div class="row">
               <div class="col-md-6">
                 <img src="images/Pj-pic.jpeg" alt="pranjal-photo">
@@ -63,13 +63,11 @@
                 </div>
               </div>
             </div>
-          </div>
 
           <img src="images/down-arrow.png" alt="Arrow-icon" class="icon arrow" onclick="location.href ='#about'"/>
         </section>
 
         <section id="about" class="about">
-          <div class="container">
            <div class="row">
             <div class="col">
              <h2 class="section-title">About me</h2>
@@ -82,14 +80,12 @@
               </div>
             </div>
            </div>
-          </div>
 
           <img src="images/down-arrow.png" alt="Arrow-icon" class="icon arrow down-arrow" onclick="location.href ='#education'"/>
           <img src="images/up-arrow.png" alt="Arrow-icon" class="icon arrow up-arrow" onclick="location.href ='#header'"/>
         </section>
 
         <section id="education" class="education">
-            <div class="container">
               <div class="row">
                 <div class="col-md-6">
                   <h2 class="section-title">Education</h2>
@@ -247,14 +243,12 @@
 
                 </div>
               </div>
-            </div>
 
             <img src="images/down-arrow.png" alt="Arrow-icon" class="icon arrow down-arrow" onclick="location.href ='#skill'"/>
             <img src="images/up-arrow.png" alt="Arrow-icon" class="icon arrow up-arrow" onclick="location.href ='#about'"/>
         </section>
 
         <section id="skill" class="skill">
-            <div class="container">
                 <div class="row">
                   <h2 class="section-title">Skills</h2>
                     <div class="col-md-12">
@@ -363,19 +357,17 @@
                       </div>
                   </div>
                 </div>
-            </div>
 
             <img src="images/down-arrow.png" alt="Arrow-icon" class="icon arrow down-arrow" onclick="location.href ='#project'"/>
             <img src="images/up-arrow.png" alt="Arrow-icon" class="icon arrow up-arrow" onclick="location.href ='#education'"/>
         </section>
 
         <section id="project" class="project">
-          <div class="container">
             <h2 class="section-title">Projects</h2>
 
-            <div class="row">
+            <div class="row g-2">
 
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="content"> 
                  <a href="https://bhartiyamudra.com/">
                  <div class="project-overlay"></div><img class="project-image" src="images/bhartiya-mudra.png">
@@ -391,7 +383,7 @@
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="content"> 
                  <a href="https://marketing-masters.vercel.app/">
                  <div class="project-overlay"></div><img class="project-image" src="images/marketing-masters.png">
@@ -407,7 +399,7 @@
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="content"> 
                  <a href="https://joycity.in/">
                  <div class="project-overlay"></div><img class="project-image" src="images/joy-city-ville.png">
@@ -423,7 +415,7 @@
                 </div>
                </div>
 
-               <div class="col-md-4">
+               <div class="col-md-3">
                 <div class="content"> 
                  <a href="https://luckyautomation.in/">
                  <div class="project-overlay"></div><img class="project-image" src="images/lucky-automation.png">
@@ -439,7 +431,7 @@
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="content"> 
                  <a href="https://annapurnaandsons.com/">
                  <div class="project-overlay"></div><img class="project-image" src="images/annapurna&sons.png">
@@ -455,7 +447,7 @@
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="content"> 
                  <a href="https://www.sharmaengineeringworks.co/">
                  <div class="project-overlay"></div><img class="project-image" src="images/sew.png">
@@ -471,7 +463,7 @@
                 </div>
                </div>
 
-               <div class="col-md-4">
+               <div class="col-md-3">
                 <div class="content"> 
                  <a href="https://food-is-life.vercel.app/">
                  <div class="project-overlay"></div><img class="project-image" src="images/food-is-life.png">
@@ -487,7 +479,7 @@
                 </div>
                </div>
 
-               <div class="col-md-4">
+               <div class="col-md-3">
                 <div class="content"> 
                  <a href="https://weather-website-sigma-rose.vercel.app/">
                  <div class="project-overlay"></div><img class="project-image" src="images/weather-watcher.png">
@@ -503,7 +495,7 @@
                 </div>
                </div>
 
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="content"> 
                  <a href="https://fitness-freak-neon.vercel.app/">
                  <div class="project-overlay"></div><img class="project-image" src="images/fitness-freak.png">
@@ -628,14 +620,12 @@
             <div class="col">
               <a href="https://github.com/Itssmepj"><button class="main-btn">View More<i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
-          </div>
 
           <img src="images/down-arrow.png" alt="Arrow-icon" class="icon arrow down-arrow" onclick="location.href ='#testimonial'"/>
           <img src="images/up-arrow.png" alt="Arrow-icon" class="icon arrow up-arrow" onclick="location.href ='#skill'"/>
         </section>
 
         <section id="testimonial" class="testimonial">
-          <div class="container">
             <div class="row">
               <h2 class="section-title">Testimonial</h2>
               <div class="carousel-container">
@@ -681,7 +671,6 @@
                 </div>
               </div>
             </div>
-          </div>
 
           <div class="col">
             <a href="mailto:lakherapranjal@gmail.com"><button class="main-btn">Hire me<i class="fa-solid fa-pen-to-square"></i></button></a>
@@ -693,12 +682,10 @@
         </section>
 
         <section id="cta" class="cta">
-          <div class="container">
             <div class="row">
               <h2 class="section-title">Let's Talk? </h2>
               <p>I treat every project like it’s my own, ensuring<span> dedication</span> and <span>quality</span> in everything I do.</p>
             </div>
-          </div>
 
           <div class="container">
             <form action="/action_page.php">
@@ -723,7 +710,6 @@
     <!-- Footer Start -->
      <footer>
       <section id="footer" class="footer">
-       <div class="container">
         <div class="row">
           <div class="col">
             <img src="images/site-logo.png" alt="site-logo">
@@ -742,7 +728,6 @@
             <p class="copyright">© 2024 | All rights reserved | <a href="https://buymeacoffee.com/itssmepj">Pranjal Lakhera</a></p>
           </div>
         </div>
-       </div>
 
       </section>
      </footer>
@@ -750,6 +735,9 @@
 
     <!-- Scroll to Top Button  -->
      <button class="scroltop fa fa-chevron-up" onclick="scrollToTop()" id="back-to-up"></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
 
     <!-- Javascript Links -->
     <script src="index.js"></script>
