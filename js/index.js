@@ -35,6 +35,7 @@ accordionHeaders.forEach(header => {
 });
 //End of Edu/Exp Accordion
 
+
 // Progress Bar
 document.addEventListener("DOMContentLoaded", () => {
   const progressBars = document.querySelectorAll(".progress");
@@ -84,23 +85,24 @@ dots.forEach((dot, index) => {
 });
 // End of Testimonial Section
 
+
 // Scroll Button to Top
-// Attach scroll event to the window
 window.onscroll = () => {
-  toggleTopButton(); // Call function to toggle button visibility
+  toggleTopButton();
 };
 
-// Scroll to the top smoothly when the button is clicked
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Toggle the visibility of the Scroll to Top button
 function toggleTopButton() {
-  // Check the vertical scroll position
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById('back-to-up').style.display = 'inline-block';
   } else {
     document.getElementById('back-to-up').style.display = 'none';
   }
 }
+
+
+// Footer
+document.getElementById("year").innerHTML = new Date().getFullYear();
