@@ -81,7 +81,8 @@ img {
     background: #fff;
     color: #7A7A7A;
     border: 2px solid #fff;
-    
+    transition: ease-in-out;
+    transform: rotate(10deg);
 }
 
 .fa-linkedin-in {
@@ -121,6 +122,8 @@ img {
 
 .other-btn:hover {
     background: #FF2868;
+    transition: ease-in-out;
+    transform: rotate(3deg);
 }
 
 .fa-solid {
