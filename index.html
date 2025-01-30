@@ -50,7 +50,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1.8s">
-                <img src="images/Pj-pic.jpeg" alt="pranjal-photo">
+                <img src="images/Pj-pic.webp" alt="pranjal-photo">
               </div>
               <div class="col-md-6">
                 <p class="wow fadeInDown" data-wow-delay="0.4s">HI THERE!</p>
@@ -373,7 +373,7 @@
               <div class="col-md-4  wow fadeInDown" data-wow-delay="0.4s">
                 <div class="content"> 
                  <a href="https://bhartiyamudra.com/">
-                 <div class="project-overlay"></div><img class="project-image" src="images/bhartiya-mudra.png">
+                 <div class="project-overlay"></div><img class="project-image" src="images/bhartiya-mudra.webp">
                   <div class="project-details fadeIn-bottom">
                   <h3 class="project-title">Bhartiya Mudra</h3>
 
@@ -389,7 +389,7 @@
               <div class="col-md-4  wow fadeInDown" data-wow-delay="0.5s">
                 <div class="content"> 
                  <a href="https://marketing-masters.vercel.app/">
-                 <div class="project-overlay"></div><img class="project-image" src="images/marketing-masters.png">
+                 <div class="project-overlay"></div><img class="project-image" src="images/marketing-masters.webp">
                   <div class="project-details fadeIn-bottom">
                   <h3 class="project-title">Marketing Masters</h3>
 
@@ -405,7 +405,7 @@
               <div class="col-md-4  wow fadeInDown" data-wow-delay="0.6s">
                 <div class="content"> 
                  <a href="https://joycity.in/">
-                 <div class="project-overlay"></div><img class="project-image" src="images/joy-city-ville.png">
+                 <div class="project-overlay"></div><img class="project-image" src="images/joy-city-ville.webp">
                   <div class="project-details fadeIn-bottom">
                   <h3 class="project-title">Joy City Ville</h3>
 
@@ -421,7 +421,7 @@
                <div class="col-md-4  wow fadeInDown" data-wow-delay="0.4s">
                 <div class="content"> 
                  <a href="https://luckyautomation.in/">
-                 <div class="project-overlay"></div><img class="project-image" src="images/lucky-automation.png">
+                 <div class="project-overlay"></div><img class="project-image" src="images/lucky-automation.webp">
                   <div class="project-details fadeIn-bottom">
                   <h3 class="project-title">Lucky Automation</h3>
 
@@ -437,7 +437,7 @@
               <div class="col-md-4  wow fadeInDown" data-wow-delay="0.5s">
                 <div class="content"> 
                  <a href="https://annapurnaandsons.com/">
-                 <div class="project-overlay"></div><img class="project-image" src="images/annapurna&sons.png">
+                 <div class="project-overlay"></div><img class="project-image" src="images/annapurna&sons.webp">
                   <div class="project-details fadeIn-bottom">
                   <h3 class="project-title">Annapurna & Sons</h3>
 
@@ -453,7 +453,7 @@
               <div class="col-md-4  wow fadeInDown" data-wow-delay="0.6s">
                 <div class="content"> 
                  <a href="https://www.sharmaengineeringworks.co/">
-                 <div class="project-overlay"></div><img class="project-image" src="images/sew.png">
+                 <div class="project-overlay"></div><img class="project-image" src="images/sew.webp">
                   <div class="project-details fadeIn-bottom">
                   <h3 class="project-title">Sharma Engineering Works</h3>
 
@@ -469,7 +469,7 @@
                <div class="col-md-4  wow fadeInDown" data-wow-delay="0.4">
                 <div class="content"> 
                  <a href="https://food-is-life.vercel.app/">
-                 <div class="project-overlay"></div><img class="project-image" src="images/food-is-life.png">
+                 <div class="project-overlay"></div><img class="project-image" src="images/food-is-life.webp">
                   <div class="project-details fadeIn-bottom">
                   <h3 class="project-title">Food is Life</h3>
 
@@ -485,7 +485,7 @@
                <div class="col-md-4  wow fadeInDown" data-wow-delay="0.5s">
                 <div class="content"> 
                  <a href="https://weather-website-sigma-rose.vercel.app/">
-                 <div class="project-overlay"></div><img class="project-image" src="images/weather-watcher.png">
+                 <div class="project-overlay"></div><img class="project-image" src="images/weather-watcher.webp">
                   <div class="project-details fadeIn-bottom">
                   <h3 class="project-title">Weather Watcher</h3>
 
@@ -501,7 +501,7 @@
               <div class="col-md-4  wow fadeInDown" data-wow-delay="0.6s">
                 <div class="content"> 
                  <a href="https://fitness-freak-neon.vercel.app/">
-                 <div class="project-overlay"></div><img class="project-image" src="images/fitness-freak.png">
+                 <div class="project-overlay"></div><img class="project-image" src="images/fitness-freak.webp">
                   <div class="project-details fadeIn-bottom">
                   <h3 class="project-title">Fitness Freak</h3>
 
@@ -592,17 +592,15 @@
           </div>
 
           <div class="container">
-            <form action="/action_page.php">
-              <input type="text" id="fname" name="firstname" placeholder="First Name" class="wow fadeInDown" data-wow-delay="0.5s">
-          
-              <input type="text" id="lname" name="lastname" placeholder="Last Name" class="wow fadeInDown" data-wow-delay="0.6s">
-              
-              <input type="text" id="email" name="email" placeholder="Email" class="wow fadeInDown" data-wow-delay="0.7s">
-          
+            <form id="contactForm" action="/action_page.php" method="POST">
+              <input type="text" id="fname" name="firstname" placeholder="First Name" required class="wow fadeInDown" data-wow-delay="0.5s">
+              <input type="text" id="lname" name="lastname" placeholder="Last Name" required class="wow fadeInDown" data-wow-delay="0.6s">            
+              <input type="text" id="email" name="email" placeholder="Email" required class="wow fadeInDown" data-wow-delay="0.7s">
               <textarea id="subject" name="subject" placeholder="Message" style="height:150px" class="wow fadeInDown" data-wow-delay="0.8s"></textarea>
-          
               <input type="submit" value="Submit" class="main-btn wow fadeInUp" data-wow-delay="0.7s">
             </form>
+           <!-- Success Message (Hidden Initially) -->
+           <div id="responseMessage" style="display: none; color: green; font-weight: bold;"></div>
           </div>
 
           <img src="images/down-arrow.png" alt="Arrow-icon" class="icon arrow down-arrow" onclick="location.href ='#footer'"/>
@@ -617,7 +615,7 @@
        <div class="container">
         <div class="row">
           <div class="col">
-            <img src="images/site-logo.png" alt="site-logo" class="wow fadeInDown" data-wow-delay="0.3s">
+            <img src="images/site-logo.webp" alt="site-logo" class="wow fadeInDown" data-wow-delay="0.3s">
             <p class="wow fadeInDown" data-wow-delay="0.4s">Passionate Wordpress Developer & Frontend Enthusiast.</p>
             <div class="icon-button">
               <a href="https://www.linkedin.com/in/pranjal-lakhera-67935524a/"><button class="icon-btn wow fadeInUp" data-wow-delay="0.6s"><i class="fa-brands fa-linkedin-in"></i></button></a>

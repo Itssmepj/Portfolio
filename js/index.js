@@ -104,5 +104,35 @@ function toggleTopButton() {
 }
 
 
+// Form Data
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent page reload
+
+  let formData = new FormData(this);
+
+  fetch("action_page.php", {
+      method: "POST",
+      body: formData,
+  })
+  .then(response => response.text())
+  .then(data => {
+      let responseMessage = document.getElementById("responseMessage");
+
+      if (data.trim() === "success") {
+          responseMessage.style.color = "green";
+          responseMessage.textContent = "Thank you! Your message has been sent successfully.";
+          document.getElementById("contactForm").reset(); // Clear form
+      } else {
+          responseMessage.style.color = "red";
+          responseMessage.textContent = "Oops! Something went wrong. Please try again.";
+      }
+
+      responseMessage.style.display = "block";
+  })
+  .catch(error => console.error("Error:", error));
+});
+
+
+
 // Footer
 document.getElementById("year").innerHTML = new Date().getFullYear();
