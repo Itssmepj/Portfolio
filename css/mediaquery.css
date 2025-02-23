@@ -159,6 +159,10 @@
         font-size: 20px;
     }
 
+    .project-details h4 {
+        font-size: 16px;
+    }
+
     .testimonial-bubble p:nth-child(1) {
         font-size: 20px;
     }
