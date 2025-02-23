@@ -33,8 +33,8 @@ img {
 }
 
 .hero, .about, .education, .skill, .project, .testimonial, .cta, .footer {
-    background: linear-gradient(343deg, #FFFFFF -140%, #000000 53%);
-    color: white;
+    background: linear-gradient(343deg, #fff -140%, #000000 53%);
+    color: #fff;
 }
 
 .section-title {
@@ -42,7 +42,6 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 58px;
-    color: #fff;
     text-align: center;
 }
 
@@ -597,9 +596,14 @@ header img {
 
 .project-details h3 {
     font-family: "Poppins", sans-serif;
-    color: #fff;
     font-size: 24px;
     font-weight: 500;
+}
+
+.project-details h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
     margin-bottom: 0.5em;
 }
 
@@ -716,7 +720,7 @@ header img {
 .control {
     position: absolute;
     background: transparent;
-    color: #ffffff;
+    color: #fff;
     font-size: 32px;
     padding: 10px 20px;
     border: none;
