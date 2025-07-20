@@ -106,3 +106,4 @@ function toggleTopButton() {
 
 // Footer
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
