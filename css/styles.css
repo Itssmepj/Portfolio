@@ -103,7 +103,7 @@ img {
     padding: 9px 9.7px;
 }
 
-.fa-envelope {
+.fa-envelope{
     font-size: 25px;
     padding: 10px;
     margin-left: 0 !important;
@@ -117,7 +117,7 @@ img {
 .fa-indian-rupee-sign {
     font-size: 25px;
     padding: 10px 15px;
-    margin: 0;
+    margin-left: 0 !important;
 }
 
 .fa-link {
