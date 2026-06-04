@@ -216,7 +216,7 @@ header img {
 
 /* Hero Section Starts */
 .hero {
-    height: 89vh;
+    /* height: 89vh; */
     display: flex;
     align-items: center;
 }
@@ -276,6 +276,61 @@ header img {
 .hero .col {
     display: flex;
     gap: 30px;
+}
+
+
+.hero-stats {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+    padding: 25px 35px;
+
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+/* 
+    box-shadow:
+        0 0 30px rgba(255, 45, 117, 0.15),
+        inset 0 0 20px rgba(255,255,255,0.02); */
+}
+
+.stat-item {
+    text-align: center;
+    min-width: 160px;
+    position: relative;
+}
+
+.stat-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50px;
+    background: rgba(255,255,255,0.15);
+}
+
+.stat-item h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ff2d75;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.4;
 }
 /* Hero Section Ends*/
 

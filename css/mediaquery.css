@@ -349,6 +349,27 @@
     .cta .section-title {
         margin-bottom: 45px;
     }
+
+        .hero-stats {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .stat-item {
+        min-width: 130px;
+    }
+
+    .stat-item:not(:last-child)::after {
+        display: none;
+    }
+
+    .stat-item h3 {
+        font-size: 1.8rem;
+    }
+
+    .stat-item p {
+        font-size: 0.85rem;
+    }
 }
 
 @media only screen and (max-width: 700px) {
