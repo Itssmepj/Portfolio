@@ -217,6 +217,7 @@ header img {
 /* Hero Section Starts */
 .hero {
     /* height: 89vh; */
+    padding: 7rem 0 6rem;
     display: flex;
     align-items: center;
 }
@@ -284,17 +285,14 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 32px;
     flex-wrap: wrap;
-
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255,255,255,0.08);
-
     border-radius: 20px;
     padding: 25px 35px;
-
-    max-width: 900px;
+    max-width: 100%;    
     margin-left: auto;
     margin-right: auto;
 /* 
@@ -312,12 +310,12 @@ header img {
 .stat-item:not(:last-child)::after {
     content: "";
     position: absolute;
-    right: -12px;
+    right: -15px;
     top: 50%;
     transform: translateY(-50%);
     width: 1px;
-    height: 50px;
-    background: rgba(255,255,255,0.15);
+    height: 65px;
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .stat-item h3 {
@@ -337,11 +335,11 @@ header img {
 
 /* About Section Starts*/
 .about {
-    height: 95vh;
+    /* height: 95vh; */
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 15px 14rem 30px;
+    padding: 6rem 14rem;
     position: relative;
 }
 
