@@ -288,8 +288,8 @@
     }
 
     .about {
-        padding: 30px 1rem;
-        height: 75vh;
+        padding: 60px 1rem;
+        /* height: 75vh; */
     }
 
     .skill {
@@ -350,7 +350,7 @@
         margin-bottom: 45px;
     }
 
-        .hero-stats {
+    .hero-stats {
         gap: 15px;
         padding: 20px;
     }
