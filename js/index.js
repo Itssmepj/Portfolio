@@ -163,3 +163,35 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
+// Theme Toggle Logic
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('theme-toggle');
+  const toggleIcon = toggleBtn.querySelector('i');
+  
+  // Initialize theme
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  
+  // Update icon based on theme
+  if(currentTheme === 'dark') {
+    toggleIcon.classList.replace('fa-moon', 'fa-sun');
+  } else {
+    toggleIcon.classList.replace('fa-sun', 'fa-moon');
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    let theme = document.documentElement.getAttribute('data-theme');
+    if (theme === 'dark') {
+      theme = 'light';
+      toggleIcon.classList.replace('fa-sun', 'fa-moon');
+    } else {
+      theme = 'dark';
+      toggleIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+    
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  });
+});
+
