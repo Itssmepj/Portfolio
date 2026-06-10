@@ -43,9 +43,7 @@
         width: 15%;
     }
 
-    .hero-heading {
-        min-height: 2.4em;
-    }
+
 
     .hero-heading-static {
         margin-bottom: -5px;
@@ -259,9 +257,7 @@
         font-size: clamp(30px, 6vw, 44px);
     }
 
-    .hero-heading {
-        min-height: 3.6em;
-    }
+
 
     .project {
         padding: 100px 5%;
