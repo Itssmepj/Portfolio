@@ -36,53 +36,71 @@ accordionHeaders.forEach(header => {
 //End of Edu/Exp Accordion
 
 
-// Progress Bar
-document.addEventListener("DOMContentLoaded", () => {
-  const progressBars = document.querySelectorAll(".progress");
 
-  progressBars.forEach((progress) => {
-      const percentage = progress.getAttribute("data-percentage");
-      const progressValue = progress.querySelector(".progress-value");
-      
-      // Set the width of the progress-value dynamically
-      progressValue.style.width = percentage + "%";
-
-      // Set the percentage text
-      progressValue.textContent = percentage + "%";
-  });
-});
-// End of Progress Bar
 
 
 // Testimonial Section
-const carouselInner = document.querySelector('.carousel-inner');
-const dots = document.querySelectorAll('.dot');
-let currentIndex = 0;
+(function () {
+  const track = document.getElementById('testiTrack');
+  const dots = document.querySelectorAll('.testi-dot');
+  const cards = document.querySelectorAll('.testi-card');
 
-function updateCarousel() {
-  const offset = currentIndex * -100;
-  carouselInner.style.transform = `translateX(${offset}%)`;
-  dots.forEach((dot, index) => {
-    dot.classList.toggle('active', index === currentIndex);
+  if (!track || !cards.length) return;
+
+  const TOTAL = cards.length;
+  const VISIBLE = 3;           // cards shown at once
+  const MAX_INDEX = TOTAL - VISIBLE; // 0..2
+  let current = 0;
+  let autoTimer;
+
+  function getCardWidth() {
+    // card width + gap (28px defined in CSS)
+    return cards[0].offsetWidth + 28;
+  }
+
+  function goTo(index) {
+    current = Math.max(0, Math.min(index, MAX_INDEX));
+    track.style.transform = `translateX(-${current * getCardWidth()}px)`;
+
+    // Update dots
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+
+    // Highlight the center card of the visible window
+    const centerIdx = current + 1;
+    cards.forEach((c, i) => c.classList.toggle('active-card', i === centerIdx));
+  }
+
+  function next() { goTo(current < MAX_INDEX ? current + 1 : 0); }
+  function prev() { goTo(current > 0 ? current - 1 : MAX_INDEX); }
+
+  // Dot navigation
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => { goTo(i <= MAX_INDEX ? i : MAX_INDEX); resetTimer(); });
   });
-}
 
-document.querySelector('.next').addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % dots.length;
-  updateCarousel();
-});
+  // Auto-play
+  function startTimer() { autoTimer = setInterval(next, 4500); }
+  function resetTimer() { clearInterval(autoTimer); startTimer(); }
 
-document.querySelector('.prev').addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + dots.length) % dots.length;
-  updateCarousel();
-});
+  // Pause on hover
+  track.addEventListener('mouseenter', () => clearInterval(autoTimer));
+  track.addEventListener('mouseleave', startTimer);
 
-dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    currentIndex = index;
-    updateCarousel();
-  });
-});
+  // Touch / swipe support
+  let touchStartX = 0;
+  track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); resetTimer(); }
+  }, { passive: true });
+
+  // Recalculate on resize
+  window.addEventListener('resize', () => goTo(current));
+
+  // Init
+  goTo(0);
+  startTimer();
+})();
 // End of Testimonial Section
 
 
@@ -106,4 +124,42 @@ function toggleTopButton() {
 
 // Footer
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+// Count-Up Animation
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll('.count-up');
+  const speed = 200; // The lower the slower
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const inc = target / speed;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + inc);
+          setTimeout(updateCount, 15);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        observer.disconnect(); // Run only once
+      }
+    });
+  }, { threshold: 0.5 });
+
+  const statsSection = document.querySelector('.about-stats-grid');
+  if (statsSection) {
+    observer.observe(statsSection);
+  }
+});
 
