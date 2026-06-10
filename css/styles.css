@@ -255,6 +255,7 @@ header img {
     max-width: 100%;
 }
 
+<<<<<<< HEAD
 /* ============================================================
    HERO SECTION — Full Redesign
    ============================================================ */
@@ -263,6 +264,14 @@ header img {
 .parallax-container {
     perspective: 1000px;
     transform-style: preserve-3d;
+=======
+/* Hero Section Starts */
+.hero {
+    /* height: 89vh; */
+    padding: 7rem 0 6rem;
+    display: flex;
+    align-items: center;
+>>>>>>> 956a031f28abfa87fc3697431d01126454753372
 }
 
 .parallax-el {
@@ -1045,7 +1054,25 @@ header img {
     border-radius: 12px;
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     padding-top: 6px;
+=======
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 25px 35px;
+    max-width: 100%;    
+    margin-left: auto;
+    margin-right: auto;
+/* 
+    box-shadow:
+        0 0 30px rgba(255, 45, 117, 0.15),
+        inset 0 0 20px rgba(255,255,255,0.02); */
+>>>>>>> 956a031f28abfa87fc3697431d01126454753372
 }
 
 .hero-scroll-wheel {
@@ -1056,6 +1083,7 @@ header img {
     animation: scrollWheel 1.8s ease-in-out infinite;
 }
 
+<<<<<<< HEAD
 @keyframes scrollWheel {
     0% {
         opacity: 1;
@@ -1066,6 +1094,17 @@ header img {
         opacity: 0;
         transform: translateY(14px);
     }
+=======
+.stat-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.15);
+>>>>>>> 956a031f28abfa87fc3697431d01126454753372
 }
 
 .hero-scroll-indicator span {
@@ -1079,7 +1118,15 @@ header img {
 
 /* About Section Starts*/
 .about {
+<<<<<<< HEAD
     padding: 100px var(--page-padding);
+=======
+    /* height: 95vh; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 14rem;
+>>>>>>> 956a031f28abfa87fc3697431d01126454753372
     position: relative;
 }
 

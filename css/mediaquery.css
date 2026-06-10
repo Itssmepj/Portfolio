@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media only screen and (max-width: 1440px) {
     .about {
         padding: 80px 5%;
@@ -730,4 +731,583 @@
     .footer-made-with {
         text-align: center;
     }
-}
+}
+=======
+@media only screen and (max-width: 1440px) {
+    .about {
+        padding: 0px 6rem 20px;
+    }
+
+    .education {
+        padding: 120px 6rem 130px;
+    }
+
+    .skill {
+        padding: 100px 6rem 130px;
+    }
+
+    .project {
+        padding: 100px 1rem;
+    }
+
+    .testimonial {
+        padding: 100px 6rem;
+    }
+
+    .footer {
+        padding: 85px 8rem 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .education {
+        padding: 95px 5rem 130px;
+    }
+
+    .education .row {
+        gap: 80px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    header img {
+        width: 12%;
+    }
+
+    footer img {
+        width: 15%;
+    }
+
+    .hero .col-md-6:nth-child(1) {
+        width: 35%;
+    }
+
+    .hero .col-md-6:nth-child(2) {
+        width: 65%;
+    }
+
+    .hero img:nth-child(1) {
+        width: 68%;
+    }
+
+    .hero h2 {
+        width: 95%;
+    }
+
+    .about {
+        padding: 0px 4rem 20px;
+    }
+
+    .education {
+        padding: 85px 3rem 105px;
+    }
+
+    .education .row {
+        gap: 70px;
+    }
+
+    .skill {
+        padding: 100px 4rem 120px;
+    }
+
+    .project {
+        padding: 100px 0;
+    }
+
+    .testimonial {
+        padding: 100px 4rem;
+    }
+
+    .cta {
+        padding: 90px 7rem 100px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header img {
+        width: 14%;
+        margin-bottom: 30px;
+    }
+
+    footer img {
+        width: 18%;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 1.5rem 0 4rem;
+    }
+
+    .hero .row {
+        flex-wrap: wrap;
+    }
+
+    .hero .arrow, .up-arrow, .down-arrow {
+        display: none;
+    }
+
+    .hero .col-md-6:nth-child(1) {
+        width: 100%;
+    }
+
+    .hero .col-md-6:nth-child(2) {
+        width: 100%;
+        text-align: center;
+        margin-top: 60px;
+        padding: 0 30px;
+    }
+
+    .hero img:nth-child(1) {
+        width: 26%;
+    }
+
+    .hero .col {
+        margin-top: 45px;
+        justify-content: center;
+    }
+
+    .hero h2, .about p, .cta p, footer p {
+        font-size: 20px;
+    }
+
+    .about {
+        padding: 0px 2rem 20px;
+        height: 90vh;
+    }
+
+    .about .icon-button {
+        margin-top: 50px;
+    }
+
+    .education .row {
+        gap: 55px;
+    }
+
+    .project-details h3 {
+        font-size: 20px;
+    }
+
+    .project-details h4 {
+        font-size: 16px;
+    }
+
+    .testimonial-bubble p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .dots {
+        margin-top: 20px;
+    }
+
+    .cta {
+        padding: 90px 3rem 100px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    footer img {
+        width: 20%;
+    }
+
+    .hero h1, .hero span {
+        font-size: 47px;
+    }
+
+    .project {
+        padding: 100px 2rem;
+    }
+
+    .testimonial {
+        padding: 100px 3rem;
+    }
+
+    .project .row {
+        margin-top: 35px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .education .row {
+        gap: 85px;
+        flex-wrap: wrap;
+    }
+
+    .education .col-md-6 {
+        width: 100%;
+    }
+
+    .skill {
+        padding: 100px 3rem 105px;
+    }
+
+    .skill-row {
+        gap: 62px;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    header img, footer img {
+        width: 16%;
+    }
+
+    .section-title {
+        margin-bottom: 60px;
+    }
+
+    .hero img:nth-child(1) {
+        width: 30%;
+    }
+
+    .hero h1, .hero span {
+        font-size: 38px;
+    }
+
+    .hero h2, .about p, .cta p, footer p {
+        font-size: 19px;
+    }
+
+    .about {
+        height: 87vh;
+    }
+
+    .education {
+        padding: 85px 3rem 90px;
+    }
+
+    .skill-row {
+        gap: 55px;
+    }
+
+    .project .section-title {
+        margin-bottom: 68px;
+    }    
+
+    .fa-link {
+        font-size: 17px;
+        padding: 8.5px 6.5px;
+    }
+
+    .project .fa-github {
+        font-size: 22px;
+        padding: 6px 6.5px;
+    }
+
+    input[type=text], textarea {
+        width: 91%;
+    }
+
+    .footer {
+        padding: 85px 1rem 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header img {
+        width: 17%;
+    } 
+    
+    footer img {
+        width: 19%;
+    }
+
+    .hero h2, .about p, .cta p, footer p {
+        font-size: 18px;
+    }
+
+    .about {
+        padding: 60px 1rem;
+        /* height: 75vh; */
+    }
+
+    .skill {
+        padding: 90px 3rem;
+    }
+
+    .skill-row {
+        gap: 0;
+        flex-wrap: wrap;
+    }
+    
+    .skill-type:nth-child(1) {
+        margin-top: 50px;
+    }
+
+    .skill-row .skill-set:nth-child(2) .progress-bar:nth-child(1), .skill-row:nth-child(2) .skill-set:nth-child(2) .progress-bar:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .skill-type {
+        font-size: 23px;
+    }
+
+    .project {
+        padding: 90px 2rem;
+    }
+
+    .testimonial {
+        padding: 90px 3rem;
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    .testimonial-bubble {
+        margin-right: 15px;
+        margin-left: 11px;
+    }
+
+    .testimonial-bubble p:nth-child(1) {
+        font-size: 18px;
+    }
+
+    .control.prev {
+        left: -50px;
+    }
+      
+    .control.next {
+        right: -50px;
+    }
+
+    .cta {
+        padding: 90px 2rem 100px;
+    }
+
+    .cta .section-title {
+        margin-bottom: 45px;
+    }
+
+    .hero-stats {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .stat-item {
+        min-width: 130px;
+    }
+
+    .stat-item:not(:last-child)::after {
+        display: none;
+    }
+
+    .stat-item h3 {
+        font-size: 1.8rem;
+    }
+
+    .stat-item p {
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header img {
+        width: 19%;
+    }
+
+    footer img {
+        width: 21%;
+    }
+
+    .hero img:nth-child(1) {
+        width: 34%;
+    }
+
+    .content {
+        width: 65%;
+    }
+
+    .project .col-md-4 {
+        margin-bottom: 40px;
+    }
+
+    input[type=text], textarea {
+        width: 92%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .fa-linkedin-in {
+        padding: 9px 10px;
+    }
+
+    .fa-github {
+        padding: 8px 8.7px;
+    }
+
+    .fa-envelope {
+        padding: 9px;
+    }
+
+    .fa-youtube {
+        padding: 9px 7px;
+    }
+
+    header img {
+        width: 22%;
+    }
+
+    footer img {
+        width: 23%;
+    }
+
+    .hero img:nth-child(1) {
+        width: 40%;
+    }
+
+    .education {
+        padding: 85px 2rem 90px;
+    }
+
+    .cta {
+        padding: 90px 1rem 100px;
+    }
+
+    #fname, #lname {
+        width: 42%;
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+
+    input[type=text], textarea {
+        width: 89%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    header img {
+        width: 25%;
+    }
+
+    footer img {
+        width: 28%;
+    }
+
+    .hero {
+        padding: 8rem 0 4rem;
+    }
+
+    .hero img:nth-child(1) {
+        width: 48%;
+    }
+
+    .hero h1, .hero span {
+        font-size: 33px;
+    }
+
+    .hero .col {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .hero .col {
+        margin-bottom: 95px;
+    }
+
+    .testimonial .section-title {
+        margin-bottom: 50px;
+    }
+
+    .content {
+        width: 72%;
+    }
+
+    .testimonial-bubble p:nth-child(1) {
+        font-size: 17px;
+        padding: 20px;
+    }
+
+    .testimonial-bubble h3 {
+        font-size: 20px;
+    }
+
+    .testimonial-bubble p:nth-child(3) {
+        font-size: 17px;
+    }
+
+    .cta {
+        padding: 90px 1rem;
+    }
+
+    input[type=text], textarea {
+        width: 89.7%;
+    }
+    
+}
+
+@media only screen and (max-width: 470px) {
+    .section-title {
+        font-size: 26px;
+    }
+
+    header img {
+        width: 30%;
+    }
+
+    footer img {
+        width: 32.5%;
+    }
+
+    .hero {
+        padding: 5.5rem 0 4rem;
+    }
+
+    .hero img:nth-child(1) {
+        width: 50%;
+    }
+
+    .about {
+        height: 79vh;
+    }
+
+    input[type=text], textarea {
+        width: 91%;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+    header img, footer img {
+        width: 35%;
+    }
+
+    .hero {
+        padding: 5.5rem 0 6rem;
+    }
+
+    .hero img:nth-child(1) {
+        width: 60%;
+    }
+
+    .about {
+        height: 84vh;
+    }
+
+    .content {
+        width: 85%;
+    }
+
+    #fname, #lname, input[type=text], textarea {
+        width: 92%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 370px) {
+
+}
+
+>>>>>>> 956a031f28abfa87fc3697431d01126454753372
