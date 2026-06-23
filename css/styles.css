@@ -15,7 +15,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 
@@ -23,7 +22,6 @@ body {
     font-family: "Open Sans", serif;
     background: #000;
     cursor: url("../images/arrow.webp"), auto;
-    overscroll-behavior-y: contain;
     overflow-x: hidden;
 }
 
