@@ -1,3 +1,12 @@
+/* ============================================================
+   PORTFOLIO — RESPONSIVE MEDIA QUERIES
+   Breakpoints: 1440 · 1250 · 1200 · 1024 · 992 · 900 · 825
+                768 · 700 · 630 · 550 · 480 · 470 · 390 · 320
+   ============================================================ */
+
+/* ---------------------------------------------------------------
+   1440px — Large desktop tweaks
+---------------------------------------------------------------- */
 @media only screen and (max-width: 1440px) {
     .about {
         padding: 80px 5%;
@@ -12,7 +21,7 @@
     }
 
     .project {
-        padding: 100px 1rem;
+        padding: 100px 5%;
     }
 
     .testimonial {
@@ -28,12 +37,22 @@
     }
 }
 
+/* ---------------------------------------------------------------
+   1250px
+---------------------------------------------------------------- */
 @media only screen and (max-width: 1250px) {
     .education {
         padding: 80px 5% 110px;
     }
+
+    .education .row {
+        gap: 80px;
+    }
 }
 
+/* ---------------------------------------------------------------
+   1200px
+---------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
     header img {
         width: 12%;
@@ -65,6 +84,18 @@
         width: 38%;
     }
 
+    .hero .col-md-6:nth-child(1) {
+        width: 35%;
+    }
+
+    .hero .col-md-6:nth-child(2) {
+        width: 65%;
+    }
+
+    .hero h2 {
+        width: 95%;
+    }
+
     .about {
         padding: 60px 4%;
     }
@@ -77,6 +108,10 @@
         padding: 70px 5% 90px;
     }
 
+    .education .row {
+        gap: 70px;
+    }
+
     .edu-milestone-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -86,7 +121,7 @@
     }
 
     .project {
-        padding: 100px 0;
+        padding: 100px 5%;
     }
 
     .testimonial {
@@ -98,7 +133,11 @@
     }
 }
 
+/* ---------------------------------------------------------------
+   1024px — Tablet landscape / Small desktop
+---------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
+    /* Header */
     header img {
         width: 14%;
         margin-bottom: 30px;
@@ -108,19 +147,35 @@
         width: 18%;
     }
 
+    /* Footer grid */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-cta-col {
+        grid-column: 1 / -1;
+    }
+
+    /* Typography */
     .section-title {
         font-size: 30px;
     }
 
     /* Hero — stack vertically */
+    .dots {
+        margin-top: 20px;
+    }
+
     .hero {
-        padding: 12rem 0 100px;
+        padding: 7rem 0 80px;
+        min-height: auto;
     }
 
     .hero-inner {
         flex-direction: column;
-        gap: 50px;
-        padding: 4rem 5%;
+        gap: 40px;
+        padding: 2rem 5% 0;
         text-align: center;
     }
 
@@ -145,12 +200,24 @@
         align-self: center;
     }
 
+    .hero .row {
+        flex-wrap: wrap;
+    }
+
     .hero-subtitle {
         max-width: 580px;
+        text-align: center;
     }
 
     .hero-chips {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .hero-chip {
+        font-size: 12px;
+        padding: 5px 12px;
     }
 
     .hero-cta {
@@ -177,6 +244,27 @@
         font-size: 20px;
     }
 
+    .hero .col-md-6:nth-child(1) {
+        width: 100%;
+    }
+
+    .hero .col-md-6:nth-child(2) {
+        width: 100%;
+        text-align: center;
+        margin-top: 60px;
+        padding: 0 30px;
+    }
+
+    .hero img:nth-child(1) {
+        width: 100%;
+    }
+
+    .hero .col {
+        margin-top: 45px;
+        justify-content: center;
+    }
+
+    /* About */
     .about {
         padding: 60px 5%;
     }
@@ -200,18 +288,33 @@
         margin-top: 20px;
     }
 
+    /* Education */
+    .education .row {
+        gap: 55px;
+    }
+
     .edu-milestone-grid {
         grid-template-columns: 1fr;
     }
 
+    /* Services */
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
+    /* Projects */
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 18px;
+    }
+
+    .project-details h3 {
+        font-size: 20px;
+    }
+
+    .project-details h4 {
+        font-size: 16px;
     }
 
     .proj-card-img-wrap {
@@ -224,7 +327,11 @@
         min-width: calc(50% - 14px);
     }
 
-    /* CTA: stack to single column on tablet */
+    .testimonial-bubble p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    /* CTA — stack to single column */
     .cta {
         padding: 80px 5% 70px;
     }
@@ -243,8 +350,23 @@
     .cta-desc {
         max-width: 100%;
     }
+
+    /* Proj CTA strip */
+    .proj-cta-strip {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .proj-cta-btn {
+        align-self: flex-start;
+    }
 }
 
+/* ---------------------------------------------------------------
+   992px
+---------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
     footer img {
         width: 20%;
@@ -255,10 +377,19 @@
         font-size: clamp(30px, 6vw, 44px);
     }
 
+    .hero h1 {
+        font-size: 47px;
+    }
+
+    /* NOTE: .hero span removed — was incorrectly overriding .hero-chip font-size */
 
 
     .project {
         padding: 100px 5%;
+    }
+
+    .project .row {
+        margin-top: 35px;
     }
 
     .testimonial {
@@ -266,20 +397,39 @@
     }
 }
 
-
+/* ---------------------------------------------------------------
+   900px
+---------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
     .edu-tabs {
         gap: 20px;
         flex-direction: column;
+        align-items: center;
     }
 
     .edu-tab {
         padding: 12px 30px;
         font-size: 18px;
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .education .row {
+        gap: 85px;
+        flex-wrap: wrap;
+    }
+
+    .education .col-md-6 {
+        width: 100%;
     }
 
     .skill {
         padding: 100px 5% 105px;
+    }
+
+    .skill-row {
+        gap: 62px;
     }
 
     .premium-skills-grid {
@@ -288,8 +438,10 @@
     }
 }
 
+/* ---------------------------------------------------------------
+   825px
+---------------------------------------------------------------- */
 @media only screen and (max-width: 825px) {
-
     header img,
     footer img {
         width: 16%;
@@ -299,9 +451,18 @@
         margin-bottom: 60px;
     }
 
+    .hero h1 {
+        font-size: 38px;
+    }
+
+
     .hero-image-frame {
         width: 220px;
         height: 220px;
+    }
+
+    .hero img:nth-child(1) {
+        width: 100%;
     }
 
     .hero-heading,
@@ -321,14 +482,34 @@
         font-size: 14.5px;
     }
 
+    .skill-row {
+        gap: 55px;
+    }
+
+    .project .section-title {
+        margin-bottom: 68px;
+    }
+
+    .fa-link {
+        font-size: 17px;
+        padding: 8.5px 6.5px;
+    }
+
+    .project .fa-github {
+        font-size: 22px;
+        padding: 6px 6.5px;
+    }
+
+    .footer {
+        padding: 85px 5% 20px;
+    }
+
     .hero h2,
     .about p,
     .cta p,
     footer p {
         font-size: 19px;
     }
-
-
 
     .education {
         padding: 85px 5% 90px;
@@ -347,15 +528,21 @@
         height: 220px;
     }
 
-    input[type=text],
-    textarea {
-        width: 91%;
+    /* CTA chips: avoid overflow of email address */
+    .cta-chip-value {
+        font-size: 12px;
+        word-break: break-all;
     }
 }
 
+/* ---------------------------------------------------------------
+   768px — Tablet portrait
+---------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
+    /* Header */
     header img {
         width: 17%;
+        margin-bottom: 0;
     }
 
     header .col {
@@ -363,8 +550,15 @@
     }
 
     .hero {
-        padding-top: 14rem;
+        padding-top: 8rem;
+        padding-bottom: 60px;
     }
+
+    .hero-inner {
+        padding-top: 1.5rem;
+        gap: 32px;
+    }
+
 
     footer img {
         width: 19%;
@@ -377,16 +571,24 @@
         font-size: 18px;
     }
 
+    /* Hide large 3D decorative shapes */
     .floating-3d-shape {
         display: none !important;
     }
 
+    /* Sections */
     .about {
-        padding: 30px 5%;
+        padding: 60px 5%;
     }
 
+    /* Skills */
     .skill {
         padding: 90px 5%;
+    }
+
+    .skill-row {
+        gap: 0;
+        flex-wrap: wrap;
     }
 
     .premium-skills-grid {
@@ -411,29 +613,53 @@
         font-size: 23px;
     }
 
+    .skill-type:nth-child(1) {
+        margin-top: 50px;
+    }
+
+    .skill-row .skill-set:nth-child(2) .progress-bar:nth-child(1),
+    .skill-row:nth-child(2) .skill-set:nth-child(2) .progress-bar:nth-child(1) {
+        margin-top: 0;
+    }
+
+    /* Services */
     .services-grid {
         grid-template-columns: 1fr;
     }
 
+    /* Projects */
     .project {
         padding: 90px 5%;
     }
 
+    /* Testimonial: 1-card view on mobile */
     .testimonial {
         padding: 90px 5%;
     }
 
-    /* Testimonial: 1-card view on mobile */
+    .carousel-container {
+        width: 100%;
+    }
+
     .testi-card {
         flex: 0 0 100%;
         min-width: 100%;
     }
 
+    .testimonial-bubble {
+        margin-right: 15px;
+        margin-left: 11px;
+    }
+
+    .testimonial-bubble p:nth-child(1) {
+        font-size: 18px;
+    }
+
+    /* CTA */
     .cta {
         padding: 70px 5% 60px;
     }
 
-    /* CTA form: stack name row */
     .cta-form-row {
         flex-direction: column;
         gap: 18px;
@@ -447,6 +673,19 @@
         font-size: clamp(1.8rem, 6vw, 2.4rem);
     }
 
+    .control.prev {
+        left: -50px;
+    }
+
+    .control.next {
+        right: -50px;
+    }
+
+    .cta .section-title {
+        margin-bottom: 45px;
+    }
+
+    /* Stats */
     .hero-stats {
         gap: 15px;
         padding: 20px;
@@ -467,8 +706,47 @@
     .stat-item p {
         font-size: 0.85rem;
     }
+
+    /* About stats */
+    .about-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .footer-cta-col {
+        grid-column: auto;
+    }
+
+    .footer-tagline {
+        max-width: 100%;
+    }
+
+    .footer-bottom-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .footer-copyright,
+    .footer-made-with {
+        text-align: center;
+    }
+
+    /* Testimonial carousel wrap padding */
+    .testi-carousel-wrap {
+        padding: 20px 0 10px;
+    }
 }
 
+/* ---------------------------------------------------------------
+   700px
+---------------------------------------------------------------- */
 @media only screen and (max-width: 700px) {
     header img {
         width: 19%;
@@ -485,13 +763,11 @@
     .project .col-md-4 {
         margin-bottom: 40px;
     }
-
-    input[type=text],
-    textarea {
-        width: 92%;
-    }
 }
 
+/* ---------------------------------------------------------------
+   630px — Small tablets / large phones
+---------------------------------------------------------------- */
 @media only screen and (max-width: 630px) {
     .fa-linkedin-in {
         padding: 9px 10px;
@@ -541,19 +817,16 @@
         padding: 90px 5% 100px;
     }
 
-    #fname,
-    #lname {
-        width: 42%;
-        margin-left: 13px;
-        margin-right: 13px;
-    }
-
-    input[type=text],
-    textarea {
-        width: 89%;
+    /* CTA chip value — email address */
+    .cta-chip-value {
+        font-size: 11.5px;
+        word-break: break-all;
     }
 }
 
+/* ---------------------------------------------------------------
+   550px — Large phones
+---------------------------------------------------------------- */
 @media only screen and (max-width: 550px) {
     .section-title {
         font-size: 28px;
@@ -567,13 +840,27 @@
         width: 28%;
     }
 
-    .hero {
-        padding: 10rem 0 80px;
+    /* Hero */
+
+    .hero-inner {
+        padding-top: 0.5rem;
+        gap: 28px;
+    }
+
+
+    .hero h1 {
+        font-size: 33px;
     }
 
     .hero-image-frame {
         width: 190px;
         height: 190px;
+    }
+
+    .hero .col {
+        flex-direction: column;
+        margin-bottom: 95px;
+        gap: 22px;
     }
 
     .hero-heading,
@@ -597,11 +884,13 @@
         justify-content: center;
     }
 
+    /* About stats — single column */
     .about-stats-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
+    /* Testimonial */
     .testimonial .section-title {
         margin-bottom: 50px;
     }
@@ -618,613 +907,6 @@
         font-size: 14px;
     }
 
-    .cta {
-        padding: 90px 5%;
-    }
-
-    input[type=text],
-    textarea {
-        width: 89.7%;
-    }
-
-}
-
-@media only screen and (max-width: 470px) {
-    .section-title {
-        font-size: 26px;
-    }
-
-    header img {
-        width: 30%;
-    }
-
-    footer img {
-        width: 32.5%;
-    }
-
-    .hero {
-        padding: 10rem 0 70px;
-    }
-
-    .hero-image-frame {
-        width: 170px;
-        height: 170px;
-    }
-
-
-
-    input[type=text],
-    textarea {
-        width: 91%;
-    }
-
-}
-
-@media only screen and (max-width: 390px) {
-
-    header img,
-    footer img {
-        width: 35%;
-    }
-
-    .hero-image-frame {
-        width: 155px;
-        height: 155px;
-    }
-
-    .hero-heading,
-    .gradient-text {
-        font-size: clamp(20px, 6vw, 24px);
-    }
-
-
-
-    .content {
-        width: 85%;
-    }
-
-    #fname,
-    #lname,
-    input[type=text],
-    textarea {
-        width: 92%;
-    }
-
-}
-
-/* Footer Responsive */
-@media only screen and (max-width: 1024px) {
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-
-    .footer-cta-col {
-        grid-column: 1 / -1;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 36px;
-    }
-
-    .footer-cta-col {
-        grid-column: auto;
-    }
-
-    .footer-tagline {
-        max-width: 100%;
-    }
-
-    .footer-bottom-inner {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
-    }
-
-    .footer-copyright,
-    .footer-made-with {
-        text-align: center;
-    }
-}
-
-=======@media only screen and (max-width: 1440px) {
-    .about {
-        padding: 0px 6rem 20px;
-    }
-
-    .education {
-        padding: 120px 6rem 130px;
-    }
-
-    .skill {
-        padding: 100px 6rem 130px;
-    }
-
-    .project {
-        padding: 100px 1rem;
-    }
-
-    .testimonial {
-        padding: 100px 6rem;
-    }
-
-    .footer {
-        padding: 85px 8rem 20px;
-    }
-
-    form {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1250px) {
-    .education {
-        padding: 95px 5rem 130px;
-    }
-
-    .education .row {
-        gap: 80px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    header img {
-        width: 12%;
-    }
-
-    footer img {
-        width: 15%;
-    }
-
-    .hero .col-md-6:nth-child(1) {
-        width: 35%;
-    }
-
-    .hero .col-md-6:nth-child(2) {
-        width: 65%;
-    }
-
-    .hero h2 {
-        width: 95%;
-    }
-
-    .about {
-        padding: 0px 4rem 20px;
-    }
-
-    .education {
-        padding: 85px 3rem 105px;
-    }
-
-    .education .row {
-        gap: 70px;
-    }
-
-    .skill {
-        padding: 100px 4rem 120px;
-    }
-
-    .project {
-        padding: 100px 0;
-    }
-
-    .testimonial {
-        padding: 100px 4rem;
-    }
-
-    .cta {
-        padding: 90px 7rem 100px;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    header img {
-        width: 14%;
-        margin-bottom: 30px;
-    }
-
-    footer img {
-        width: 18%;
-    }
-
-    .section-title {
-        font-size: 30px;
-    }
-
-    .hero {
-        padding: 1.5rem 0 4rem;
-    }
-
-    .hero .row {
-        flex-wrap: wrap;
-    }
-
-    .hero .arrow,
-    .up-arrow,
-    .down-arrow {
-        display: none;
-    }
-
-    .hero .col-md-6:nth-child(1) {
-        width: 100%;
-    }
-
-    .hero .col-md-6:nth-child(2) {
-        width: 100%;
-        text-align: center;
-        margin-top: 60px;
-        padding: 0 30px;
-    }
-
-    .hero img:nth-child(1) {
-        width: 100%;
-    }
-
-    .hero .col {
-        margin-top: 45px;
-        justify-content: center;
-    }
-
-    .hero h2,
-    .about p,
-    .cta p,
-    footer p {
-        font-size: 20px;
-    }
-
-    .about {
-        padding: 0px 2rem 20px;
-        height: 90vh;
-    }
-
-    .about .icon-button {
-        margin-top: 50px;
-    }
-
-    .education .row {
-        gap: 55px;
-    }
-
-    .project-details h3 {
-        font-size: 20px;
-    }
-
-    .project-details h4 {
-        font-size: 16px;
-    }
-
-    .testimonial-bubble p:nth-child(1) {
-        font-size: 20px;
-    }
-
-    .dots {
-        margin-top: 20px;
-    }
-
-    .cta {
-        padding: 90px 3rem 100px;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    footer img {
-        width: 20%;
-    }
-
-    .hero h1,
-    .hero span {
-        font-size: 47px;
-    }
-
-    .project {
-        padding: 100px 2rem;
-    }
-
-    .testimonial {
-        padding: 100px 3rem;
-    }
-
-    .project .row {
-        margin-top: 35px;
-    }
-}
-
-
-@media only screen and (max-width: 900px) {
-    .education .row {
-        gap: 85px;
-        flex-wrap: wrap;
-    }
-
-    .education .col-md-6 {
-        width: 100%;
-    }
-
-    .skill {
-        padding: 100px 3rem 105px;
-    }
-
-    .skill-row {
-        gap: 62px;
-    }
-}
-
-@media only screen and (max-width: 825px) {
-
-    header img,
-    footer img {
-        width: 16%;
-    }
-
-    .section-title {
-        margin-bottom: 60px;
-    }
-
-    .hero img:nth-child(1) {
-        width: 100%;
-    }
-
-    .hero h1,
-    .hero span {
-        font-size: 38px;
-    }
-
-    .hero h2,
-    .about p,
-    .cta p,
-    footer p {
-        font-size: 19px;
-    }
-
-    .about {
-        height: 87vh;
-    }
-
-    .education {
-        padding: 85px 3rem 90px;
-    }
-
-    .skill-row {
-        gap: 55px;
-    }
-
-    .project .section-title {
-        margin-bottom: 68px;
-    }
-
-    .fa-link {
-        font-size: 17px;
-        padding: 8.5px 6.5px;
-    }
-
-    .project .fa-github {
-        font-size: 22px;
-        padding: 6px 6.5px;
-    }
-
-    input[type=text],
-    textarea {
-        width: 91%;
-    }
-
-    .footer {
-        padding: 85px 1rem 20px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    header img {
-        width: 17%;
-    }
-
-    footer img {
-        width: 19%;
-    }
-
-    .hero h2,
-    .about p,
-    .cta p,
-    footer p {
-        font-size: 18px;
-    }
-
-    .about {
-        padding: 60px 1rem;
-        /* height: 75vh; */
-    }
-
-    .skill {
-        padding: 90px 3rem;
-    }
-
-    .skill-row {
-        gap: 0;
-        flex-wrap: wrap;
-    }
-
-    .skill-type:nth-child(1) {
-        margin-top: 50px;
-    }
-
-    .skill-row .skill-set:nth-child(2) .progress-bar:nth-child(1),
-    .skill-row:nth-child(2) .skill-set:nth-child(2) .progress-bar:nth-child(1) {
-        margin-top: 0;
-    }
-
-    .skill-type {
-        font-size: 23px;
-    }
-
-    .project {
-        padding: 90px 2rem;
-    }
-
-    .testimonial {
-        padding: 90px 3rem;
-    }
-
-    .carousel-container {
-        width: 100%;
-    }
-
-    .testimonial-bubble {
-        margin-right: 15px;
-        margin-left: 11px;
-    }
-
-    .testimonial-bubble p:nth-child(1) {
-        font-size: 18px;
-    }
-
-    .control.prev {
-        left: -50px;
-    }
-
-    .control.next {
-        right: -50px;
-    }
-
-    .cta {
-        padding: 90px 2rem 100px;
-    }
-
-    .cta .section-title {
-        margin-bottom: 45px;
-    }
-
-    .hero-stats {
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .stat-item {
-        min-width: 130px;
-    }
-
-    .stat-item:not(:last-child)::after {
-        display: none;
-    }
-
-    .stat-item h3 {
-        font-size: 1.8rem;
-    }
-
-    .stat-item p {
-        font-size: 0.85rem;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    header img {
-        width: 19%;
-    }
-
-    footer img {
-        width: 21%;
-    }
-
-    .content {
-        width: 65%;
-    }
-
-    .project .col-md-4 {
-        margin-bottom: 40px;
-    }
-
-    input[type=text],
-    textarea {
-        width: 92%;
-    }
-}
-
-@media only screen and (max-width: 630px) {
-    .fa-linkedin-in {
-        padding: 9px 10px;
-    }
-
-    .fa-github {
-        padding: 8px 8.7px;
-    }
-
-    .fa-envelope {
-        padding: 9px;
-    }
-
-    .fa-youtube {
-        padding: 9px 7px;
-    }
-
-    header img {
-        width: 22%;
-    }
-
-    footer img {
-        width: 23%;
-    }
-
-    .education {
-        padding: 85px 2rem 90px;
-    }
-
-    .cta {
-        padding: 90px 1rem 100px;
-    }
-
-    #fname,
-    #lname {
-        width: 42%;
-        margin-left: 13px;
-        margin-right: 13px;
-    }
-
-    input[type=text],
-    textarea {
-        width: 89%;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    .section-title {
-        font-size: 28px;
-    }
-
-    header img {
-        width: 25%;
-    }
-
-    footer img {
-        width: 28%;
-    }
-
-    .hero {
-        padding: 8rem 0 4rem;
-    }
-
-    .hero h1,
-    .hero span {
-        font-size: 33px;
-    }
-
-    .hero .col {
-        flex-direction: column;
-        gap: 22px;
-    }
-
-    .hero .col {
-        margin-bottom: 95px;
-    }
-
-    .testimonial .section-title {
-        margin-bottom: 50px;
-    }
-
-    .content {
-        width: 72%;
-    }
-
     .testimonial-bubble p:nth-child(1) {
         font-size: 17px;
         padding: 20px;
@@ -1239,16 +921,85 @@
     }
 
     .cta {
-        padding: 90px 1rem;
+        padding: 90px 5%;
     }
 
-    input[type=text],
-    textarea {
-        width: 89.7%;
+    /* Projects CTA strip */
+    .proj-cta-strip {
+        padding: 22px 20px;
     }
 
+    .proj-cta-label {
+        font-size: 16px;
+    }
+
+    .proj-cta-btn {
+        width: 100%;
+        justify-content: center;
+        align-self: stretch;
+    }
+
+    /* Footer logo */
+    footer img {
+        width: 30%;
+    }
 }
 
+/* ---------------------------------------------------------------
+   480px
+---------------------------------------------------------------- */
+@media only screen and (max-width: 480px) {
+    /* Hero skill icons hidden to avoid clutter */
+    .hero-skill-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    .hero-role {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    /* CTA form */
+    .cta-form-card {
+        padding: 24px 18px;
+    }
+
+    /* Services card padding */
+    .service-card {
+        padding: 30px 24px;
+    }
+
+    /* Edu milestone cards */
+    .edu-milestone-card {
+        padding: 28px 22px 24px;
+    }
+
+    /* Skills grid: 2 columns minimum */
+    .premium-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* Skill pills wrap nicely */
+    .skill-pill-container {
+        gap: 10px;
+    }
+
+    .skill-pill {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+}
+
+/* ---------------------------------------------------------------
+   470px
+---------------------------------------------------------------- */
 @media only screen and (max-width: 470px) {
     .section-title {
         font-size: 26px;
@@ -1262,51 +1013,215 @@
         width: 32.5%;
     }
 
-    .hero {
-        padding: 5.5rem 0 4rem;
+    .hero-image-frame {
+        width: 170px;
+        height: 170px;
     }
-
-    .about {
-        height: 79vh;
-    }
-
-    input[type=text],
-    textarea {
-        width: 91%;
-    }
-
 }
 
+/* ---------------------------------------------------------------
+   390px — Small phones (iPhone SE, Galaxy S, etc.)
+---------------------------------------------------------------- */
 @media only screen and (max-width: 390px) {
-
     header img,
     footer img {
         width: 35%;
     }
 
-    .hero {
-        padding: 5.5rem 0 6rem;
+    .hero-inner {
+        padding-top: 0.5rem;
     }
 
-    .about {
-        height: 84vh;
+    .hero-image-frame {
+        width: 155px;
+        height: 155px;
+    }
+
+    .hero-heading,
+    .gradient-text {
+        font-size: clamp(20px, 6vw, 24px);
+    }
+
+    .hero-subtitle {
+        font-size: 13.5px;
+    }
+
+    .hero-cta .main-btn,
+    .hero-cta .other-btn {
+        font-size: 13px;
+        padding: 10px 22px;
     }
 
     .content {
         width: 85%;
     }
 
-    #fname,
-    #lname,
-    input[type=text],
-    textarea {
-        width: 92%;
+    /* About stat cards */
+    .stat-info h3 {
+        font-size: 34px;
     }
 
+    /* Section title */
+    .section-title {
+        font-size: 24px;
+    }
 
+    /* Edu tab buttons */
+    .edu-tab {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    /* Skills */
+    .skill-name {
+        font-size: 12px;
+    }
+
+    .skill-icon {
+        font-size: 24px;
+    }
+
+    /* CTA form */
+    .cta-form-card {
+        padding: 20px 16px;
+        border-radius: 20px;
+    }
+
+    /* CTA chip: prevent horizontal scroll */
+    .cta-chip {
+        padding: 12px 14px;
+        gap: 12px;
+    }
+
+    .cta-chip-value {
+        font-size: 11px;
+        word-break: break-all;
+    }
+
+    /* Testimonial */
+    .testi-card-inner {
+        padding: 22px 18px 20px;
+    }
+
+    .testi-text {
+        font-size: 13.5px;
+    }
+
+    .testi-name {
+        font-size: 14px;
+    }
+
+    .testi-carousel-wrap {
+        padding: 16px 0 10px;
+    }
+
+    /* Footer */
+    .footer-hire-btn {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+    /* Project CTA */
+    .proj-cta-strip {
+        padding: 18px 16px;
+        border-radius: 14px;
+    }
+
+    .proj-cta-label {
+        font-size: 15px;
+    }
+
+    .proj-cta-sub {
+        font-size: 12px;
+    }
 }
 
+/* ---------------------------------------------------------------
+   320px — Very small / ultra-compact phones
+---------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+    header img,
+    footer img {
+        width: 40%;
+    }
 
-@media only screen and (max-width: 370px) {}
+    .hero-inner {
+        padding-top: 0.5rem;
+    }
 
->>>>>>>956a031f28abfa87fc3697431d01126454753372
+    .hero-image-frame {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero-heading,
+    .gradient-text {
+        font-size: clamp(18px, 5.5vw, 22px);
+    }
+
+    .hero-chips {
+        gap: 6px;
+    }
+
+    .hero-chip {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .hero-cta .main-btn,
+    .hero-cta .other-btn {
+        font-size: 12px;
+        padding: 9px 18px;
+        max-width: 100%;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .premium-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .skill-pill {
+        font-size: 11px;
+        padding: 7px 12px;
+    }
+
+    .edu-tab {
+        font-size: 14px;
+        padding: 9px 18px;
+    }
+
+    .cta-chip {
+        padding: 10px 12px;
+    }
+
+    .cta-chip-icon {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+    }
+
+    .cta-chip-value {
+        font-size: 10.5px;
+        word-break: break-all;
+    }
+
+    .testi-card-inner {
+        padding: 18px 14px;
+    }
+
+    .testi-text {
+        font-size: 13px;
+    }
+
+    .proj-cta-strip {
+        padding: 16px 14px;
+    }
+
+    .stat-info h3 {
+        font-size: 30px;
+    }
+}
