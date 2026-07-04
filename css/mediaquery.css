@@ -310,9 +310,9 @@
     }
 
     /* Projects */
-    .project-grid {
+    .project-grid, .project-grid.layout-2col, .project-grid.layout-3col {
         grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
+        gap: 30px;
     }
 
     .project-details h3 {
@@ -324,7 +324,7 @@
     }
 
     .proj-card-img-wrap {
-        height: 170px;
+        height: auto;
     }
 
     /* Testimonial: 2-card view on tablet */
@@ -526,12 +526,12 @@
         gap: 12px;
     }
 
-    .project-grid {
+    .project-grid, .project-grid.layout-2col, .project-grid.layout-3col {
         grid-template-columns: 1fr;
     }
 
     .proj-card-img-wrap {
-        height: 220px;
+        height: auto;
     }
 
     /* CTA chips: avoid overflow of email address */
