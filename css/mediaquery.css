@@ -279,6 +279,12 @@
         align-items: center;
     }
 
+    .about-stats-col {
+        max-width: 550px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
     .about .section-title {
         text-align: center !important;
     }

@@ -22,7 +22,7 @@ body {
     font-family: "Open Sans", serif;
     background: #000;
     cursor: url("../images/arrow.webp"), auto;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body::-webkit-scrollbar {
@@ -2301,7 +2301,7 @@ x .hero-scroll-wheel {
 .testi-badge .fa-solid {
     margin: 0;
     font-size: 11px;
-    color: #fbbf24;
+    color: #ff2868;
 }
 
 .testi-section-header .section-title {
