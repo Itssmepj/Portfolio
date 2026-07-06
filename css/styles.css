@@ -521,17 +521,29 @@ header img {
     }
 }
 
-/* Subtle dot-grid overlay */
+/* Subtle box-grid overlay */
 .hero-grid-overlay {
     position: absolute;
-    inset: 0;
+    inset: -100px;
     z-index: 0;
     pointer-events: none;
-    background-image:
-        radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-    background-size: 38px 38px;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 90px 90px;
+    background-position: center top;
     mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
     -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+    animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(90px);
+    }
 }
 
 /* z-index layer */
